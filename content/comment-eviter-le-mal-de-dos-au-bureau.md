@@ -1,7 +1,7 @@
 ---
 title: Comment éviter le mal de dos au bureau : posture et bons réflexes
 seo_title: Comment éviter le mal de dos au bureau : 9 conseils simples
-description: Assis toute la journée, vous avez mal au dos ? Découvrez comment régler votre poste, bouger plus et adopter les bons réflexes pour éviter le mal de dos au bureau.
+description: Assis toute la journée, vous avez mal au dos ? Découvrez comment régler votre poste, bouger plus et adopter les bons réflexes contre le mal de dos au bureau.
 category: sante
 lang: fr
 date: 2026-11-10T10:25:00+01:00

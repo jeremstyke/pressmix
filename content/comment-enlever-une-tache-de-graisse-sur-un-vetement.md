@@ -1,7 +1,7 @@
 ---
 title: Comment enlever une tache de graisse sur un vêtement
 seo_title: Comment enlever une tache de graisse sur un vêtement
-description: Tache d'huile, de beurre ou de sauce ? Découvrez comment enlever une tache de graisse sur un vêtement avec du liquide vaisselle, du talc ou du savon de Marseille.
+description: Tache d'huile, de beurre ou de sauce ? Voici comment enlever une tache de graisse sur un vêtement avec du liquide vaisselle, du talc ou du savon de Marseille.
 category: maison
 lang: fr
 date: 2026-11-10T17:55:00+01:00
