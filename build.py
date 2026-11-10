@@ -251,7 +251,7 @@ def pager(cur, total, base):
 
 # ---------- Proposer un article ----------
 SUBMIT_TXT = {
-  "fr": dict(lead="Publiez gratuitement votre article sur Le Mag Utile. Chaque proposition est relue avant publication.",
+  "fr": dict(lead="Publiez gratuitement votre article sur PressMix. Chaque proposition est relue avant publication.",
     rules=["Article original, jamais publié ailleurs, en français", "600 mots minimum, utile et bien structuré", "Sous-titres avec ## et listes avec - (format markdown)",
            "Un lien vers votre site autorisé", "Refusés : contenu copié, adulte, jeux d'argent, arnaques, armes, contenu haineux"],
     name="Votre nom (affiché sous l'article)", email="Votre email (jamais affiché)", cat="Catégorie", choose="Choisir...", title="Titre de l'article",
@@ -259,7 +259,7 @@ SUBMIT_TXT = {
     url="Votre site (facultatif)", anchor="Texte du lien vers votre site (facultatif)", words="mots", min="minimum 600 recommandé",
     send="Envoyer pour relecture", ok="✅ Merci ! Votre article a bien été reçu. Il sera publié après relecture.",
     err="Envoi impossible. Vérifiez que l'article fait au moins 1 500 caractères et que le lien commence par https://", free="100 % gratuit"),
-  "en": dict(lead="Publish your article on The Useful Mag for free. Every submission is reviewed before publishing.",
+  "en": dict(lead="Publish your article on PressMix for free. Every submission is reviewed before publishing.",
     rules=["Original article, never published elsewhere, in English", "At least 600 words, useful and well structured", "Subheadings with ## and lists with - (markdown format)",
            "One link to your website allowed", "Rejected: copied, adult, gambling, scam, weapons or hateful content"],
     name="Your name (shown under the article)", email="Your email (never shown)", cat="Category", choose="Choose...", title="Article title",

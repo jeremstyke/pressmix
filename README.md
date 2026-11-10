@@ -1,4 +1,4 @@
-# Le Mag Utile
+# PressMix
 
 Site statique bilingue (FR / EN) hébergé sur GitHub Pages.
 

@@ -27,7 +27,7 @@ jobs:
         run: python3 build.py
       - name: Publier
         run: |
-          git config user.name "lemagutile-bot"
+          git config user.name "pressmix-bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A docs data
           git diff --cached --quiet || git commit -m "Mise à jour du site $(date -u +'%Y-%m-%d %H:%M')"
