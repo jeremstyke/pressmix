@@ -3,6 +3,7 @@ title: Combien de temps se conserve un œuf ? (cru, dur, au frigo)
 seo_title: Combien de temps se conserve un œuf : cru, cuit, au frigo ou non
 description: Œuf cru, œuf dur, au réfrigérateur ou à température ambiante : voici combien de temps se conserve un œuf, comment lire la date et le test de l'eau pour savoir s'il est encore bon.
 category: cuisine
+translation: how-long-do-eggs-last
 date: 2026-11-10T10:00:00+01:00
 tags: œufs, conservation, DLC, astuces cuisine
 ---

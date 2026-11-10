@@ -3,6 +3,7 @@ title: Téléphone lent : 10 solutions pour le rendre plus rapide
 seo_title: Téléphone lent : 10 solutions efficaces (Android et iPhone)
 description: Votre téléphone rame ? Voici 10 solutions simples et gratuites pour accélérer un smartphone Android ou un iPhone, du redémarrage au nettoyage du stockage.
 category: tech
+translation: why-is-my-phone-so-slow
 date: 2026-11-10T09:00:00+01:00
 tags: smartphone, Android, iPhone, astuces, stockage
 ---
