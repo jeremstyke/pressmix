@@ -16,6 +16,15 @@
 "category": "argent"
 },
 {
+"title": "Des harkis réclament justice pour le traitement de leurs morts dans des camps en France dans les années 1960 : « Nous avons été traités avec mépris par la République »",
+"url": "https://www.lemonde.fr/afrique/article/2026/11/10/des-harkis-reclament-justice-pour-le-traitement-de-leurs-morts-dans-des-camps-en-france-dans-les-annees-1960-nous-avons-ete-traites-avec-mepris-par-la-republique_6808883_3212.html",
+"date": "2026-11-10T18:10:19+01:00",
+"source": "Le Monde",
+"lang": "fr",
+"category": null,
+"follow": false
+},
+{
 "title": "Après les supermarchés, les appareils ménagers pourraient être la prochaine cible des cyberattaques",
 "url": "https://www.lefigaro.fr/secteur/high-tech/apres-les-supermarches-les-appareils-menagers-pourraient-etre-la-prochaine-cible-des-cyberattaques-20261110",
 "date": "2026-11-10T18:05:04+01:00",
@@ -54,6 +63,24 @@
 "source": "Le Figaro Économie",
 "lang": "fr",
 "category": "argent"
+},
+{
+"title": "Nintendo Officially Shuts Down Switch 2 Jailbreak in New Update",
+"url": "https://www.polygon.com/nintendo-switch-2-jailbreak-update/",
+"date": "2026-11-10T17:51:01+00:00",
+"source": "Polygon",
+"lang": "en",
+"category": "jeux-video",
+"follow": false
+},
+{
+"title": "How to get and use the Song of Storms in Ocarina of Time",
+"url": "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-song-of-storms-unlock-use/",
+"date": "2026-11-10T17:50:42+00:00",
+"source": "Polygon",
+"lang": "en",
+"category": "jeux-video",
+"follow": false
 },
 {
 "title": "Universes Beyond’s Most Intense Villain Officially Joins Magic: The Gathering’s Top 10 Commanders",
@@ -2568,11 +2595,353 @@
 "category": "crypto"
 },
 {
+"title": "L'IA voit Utrecht légèrement devant Nimègue",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-utrecht-nijmegen-2026-11-08/",
+"date": "2026-11-08T17:04:24+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI slightly favors Utrecht over Nijmegen",
+"url": "https://aifootpredictor.com/blog/prediction-utrecht-nijmegen-2026-11-08/",
+"date": "2026-11-08T17:04:24+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Braga s'imposer 2-0 sur le terrain de Rio Ave",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-rio-ave-sp-braga-2026-11-08/",
+"date": "2026-11-08T17:04:11+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Sp Braga beating Rio Ave 0-2",
+"url": "https://aifootpredictor.com/blog/prediction-rio-ave-sp-braga-2026-11-08/",
+"date": "2026-11-08T17:04:11+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Lens l'emporter face à Marseille à Bollaert",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-lens-marseille-2026-11-08/",
+"date": "2026-11-08T17:03:57+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI backs Lens to get past Marseille at Bollaert",
+"url": "https://aifootpredictor.com/blog/prediction-lens-marseille-2026-11-08/",
+"date": "2026-11-08T17:03:57+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
 "title": "Quêtes annexes Zelda Ocarina of Time : Comment finir le remake Switch 2 à 100% ?",
 "url": "https://www.jeuxvideo.com/news/2113330/quetes-annexes-zelda-ocarina-of-time-comment-finir-le-remake-switch-2-a-100.htm",
 "date": "2026-11-08T17:00:13+01:00",
 "source": "Jeuxvideo.com",
 "lang": "fr",
 "category": "jeux-video"
+},
+{
+"title": "L'IA voit Fribourg battre l'Union Berlin 2-0",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-freiburg-union-berlin-2026-11-08/",
+"date": "2026-11-08T15:35:48+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Freiburg beating Union Berlin 2-0",
+"url": "https://aifootpredictor.com/blog/prediction-freiburg-union-berlin-2026-11-08/",
+"date": "2026-11-08T15:35:48+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Hoffenheim battre Schalke 04",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-hoffenheim-schalke-04-2026-11-08/",
+"date": "2026-11-08T15:35:39+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Hoffenheim beating Schalke 04",
+"url": "https://aifootpredictor.com/blog/prediction-hoffenheim-schalke-04-2026-11-08/",
+"date": "2026-11-08T15:35:39+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Leverkusen s'imposer à Cologne en Bundesliga",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-fc-koln-leverkusen-2026-11-08/",
+"date": "2026-11-08T13:44:22+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Leverkusen beating Köln in the Bundesliga",
+"url": "https://aifootpredictor.com/blog/prediction-fc-koln-leverkusen-2026-11-08/",
+"date": "2026-11-08T13:44:22+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit la Juventus s'imposer face à la Fiorentina",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-fiorentina-juventus-2026-11-08/",
+"date": "2026-11-08T13:44:06+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Juventus beating Fiorentina in Serie A",
+"url": "https://aifootpredictor.com/blog/prediction-fiorentina-juventus-2026-11-08/",
+"date": "2026-11-08T13:44:06+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit l'Inter s'imposer face à Côme en Serie A",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-inter-como-2026-11-08/",
+"date": "2026-11-08T13:43:53+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI backs Inter to beat Como in Serie A",
+"url": "https://aifootpredictor.com/blog/prediction-inter-como-2026-11-08/",
+"date": "2026-11-08T13:43:53+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Villarreal s'imposer 1-0 face à Getafe",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-villarreal-getafe-2026-11-08/",
+"date": "2026-11-08T13:43:40+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Villarreal edging Getafe 1-0",
+"url": "https://aifootpredictor.com/blog/prediction-villarreal-getafe-2026-11-08/",
+"date": "2026-11-08T13:43:40+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit la Real Sociedad battre le Rayo Vallecano",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-sociedad-vallecano-2026-11-08/",
+"date": "2026-11-08T13:09:41+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI backs Sociedad to beat Vallecano in LaLiga",
+"url": "https://aifootpredictor.com/blog/prediction-sociedad-vallecano-2026-11-08/",
+"date": "2026-11-08T13:09:41+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Celta Vigo battre Levante en Liga",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-celta-levante-2026-11-08/",
+"date": "2026-11-08T13:09:29+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Celta beating Levante in LaLiga",
+"url": "https://aifootpredictor.com/blog/prediction-celta-levante-2026-11-08/",
+"date": "2026-11-08T13:09:29+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Barcelone s'imposer face à l'Atlético Madrid",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-ath-madrid-barcelona-2026-11-08/",
+"date": "2026-11-08T13:05:38+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Barcelona edging Atletico Madrid",
+"url": "https://aifootpredictor.com/blog/prediction-ath-madrid-barcelona-2026-11-08/",
+"date": "2026-11-08T13:05:38+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Liverpool s'imposer face à Crystal Palace",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-crystal-palace-liverpool-2026-11-08/",
+"date": "2026-11-08T13:05:19+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI backs Liverpool to beat Crystal Palace",
+"url": "https://aifootpredictor.com/blog/prediction-crystal-palace-liverpool-2026-11-08/",
+"date": "2026-11-08T13:05:19+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Brighton battre Brentford",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-brighton-brentford-2026-11-08/",
+"date": "2026-11-08T13:05:05+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI backs Brighton to beat Brentford",
+"url": "https://aifootpredictor.com/blog/prediction-brighton-brentford-2026-11-08/",
+"date": "2026-11-08T13:05:05+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Bournemouth s'imposer à Ipswich",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-ipswich-bournemouth-2026-11-08/",
+"date": "2026-11-08T13:04:50+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Bournemouth edging Ipswich at Portman Road",
+"url": "https://aifootpredictor.com/blog/prediction-ipswich-bournemouth-2026-11-08/",
+"date": "2026-11-08T13:04:50+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Chelsea s'imposer à Sunderland",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-sunderland-chelsea-2026-11-08/",
+"date": "2026-11-08T13:04:33+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Chelsea getting past Sunderland",
+"url": "https://aifootpredictor.com/blog/prediction-sunderland-chelsea-2026-11-08/",
+"date": "2026-11-08T13:04:33+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Manchester United battre Aston Villa à Old Trafford",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-man-united-aston-villa-2026-11-08/",
+"date": "2026-11-08T13:04:18+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Man United edging Aston Villa at Old Trafford",
+"url": "https://aifootpredictor.com/blog/prediction-man-united-aston-villa-2026-11-08/",
+"date": "2026-11-08T13:04:18+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit le PSV Eindhoven battre Cambuur 3-1",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-cambuur-psv-eindhoven-2026-11-08/",
+"date": "2026-11-08T13:03:59+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees PSV Eindhoven beating Cambuur 3-1",
+"url": "https://aifootpredictor.com/blog/prediction-cambuur-psv-eindhoven-2026-11-08/",
+"date": "2026-11-08T13:03:59+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
+},
+{
+"title": "L'IA voit Benfica s'imposer 2-0 à Estrela",
+"url": "https://aifootpredictor.com/fr/blog/pronostic-estrela-benfica-2026-11-08/",
+"date": "2026-11-08T13:03:41+00:00",
+"source": "AI Football Predictor",
+"lang": "fr",
+"category": "sport",
+"follow": true
+},
+{
+"title": "AI sees Benfica winning at Estrela 2-0",
+"url": "https://aifootpredictor.com/blog/prediction-estrela-benfica-2026-11-08/",
+"date": "2026-11-08T13:03:41+00:00",
+"source": "AI Football Predictor",
+"lang": "en",
+"category": "sport",
+"follow": true
 }
 ]
