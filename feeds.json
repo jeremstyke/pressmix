@@ -100,5 +100,19 @@
     "url": "https://www.skysports.com/rss/12040",
     "lang": "en",
     "category": "sport"
+  },
+  {
+    "name": "AI Football Predictor",
+    "url": "https://aifootpredictor.com/fr/feed.xml",
+    "lang": "fr",
+    "category": "sport",
+    "follow": true
+  },
+  {
+    "name": "AI Football Predictor",
+    "url": "https://aifootpredictor.com/feed.xml",
+    "lang": "en",
+    "category": "sport",
+    "follow": true
   }
 ]

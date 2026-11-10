@@ -226,7 +226,7 @@ def card(a, h="h3"):
 def news_list(items, lang):
     t = T[lang]
     return '<ul class="news">' + "".join(
-        f'<li><a href="{esc(n["url"])}" target="_blank" rel="nofollow noopener" title="{t["ext"]} {esc(n["source"])}">{esc(n["title"])}</a>'
+        f'<li><a href="{esc(n["url"])}" target="_blank" rel="{nrel(n)}" title="{t["ext"]} {esc(n["source"])}">{esc(n["title"])}</a>'
         f'<small>{esc(n["source"])} · {ago(n["dt"], lang)}</small></li>' for n in items) + "</ul>"
 
 def author_box(a, lang):
@@ -237,8 +237,11 @@ def author_box(a, lang):
         link = f' · <a href="{esc(a["author_url"])}" target="_blank" rel="{rel}">{esc(a.get("anchor") or T[lang]["author_site"])}</a>'
     return f'<p class="meta" style="margin-top:26px;padding:14px;background:var(--soft);border-radius:10px">✍️ {T[lang]["by"]} <strong>{esc(a["author"])}</strong>{link}</p>'
 
+def nrel(n):
+    return "noopener" if n.get("follow") else "nofollow noopener"
+
 def news_card(n, lang):
-    return (f'<a class="card nc" href="{esc(n["url"])}" target="_blank" rel="nofollow noopener">'
+    return (f'<a class="card nc" href="{esc(n["url"])}" target="_blank" rel="{nrel(n)}">'
             f'<span class="tag">📰 {esc(n["source"])}</span><h3>{esc(n["title"])}</h3>'
             f'<span class="meta">{ago(n["dt"], lang)} · {esc(n["source"])} ↗</span></a>')
 

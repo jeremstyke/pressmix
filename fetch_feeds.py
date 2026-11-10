@@ -64,7 +64,7 @@ def main():
             items = parse(fetch(f["url"]))[:MAX_PER_FEED]
             for i in items:
                 if i["url"] not in seen:
-                    seen[i["url"]] = dict(i, source=f["name"], lang=f["lang"], category=f.get("category"))
+                    seen[i["url"]] = dict(i, source=f["name"], lang=f["lang"], category=f.get("category"), follow=bool(f.get("follow")))
             ok += 1
             print(f"OK  {f['name']}: {len(items)} items")
         except Exception as e:
