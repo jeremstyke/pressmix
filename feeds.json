@@ -1,0 +1,19 @@
+[
+  {"name": "Le Monde", "url": "https://www.lemonde.fr/rss/une.xml", "lang": "fr", "category": null},
+  {"name": "France 24", "url": "https://www.france24.com/fr/rss", "lang": "fr", "category": null},
+  {"name": "Numerama", "url": "https://www.numerama.com/feed/", "lang": "fr", "category": "tech"},
+  {"name": "Frandroid", "url": "https://www.frandroid.com/feed", "lang": "fr", "category": "tech"},
+  {"name": "Journal du Geek", "url": "https://www.journaldugeek.com/feed/", "lang": "fr", "category": "tech"},
+  {"name": "Journal du Coin", "url": "https://journalducoin.com/feed/", "lang": "fr", "category": "crypto"},
+  {"name": "L'Équipe", "url": "https://dwh.lequipe.fr/api/edito/rss?path=/", "lang": "fr", "category": "sport"},
+  {"name": "Jeuxvideo.com", "url": "https://www.jeuxvideo.com/rss/rss.xml", "lang": "fr", "category": "jeux-video"},
+  {"name": "Capital", "url": "https://www.capital.fr/feeds", "lang": "fr", "category": "argent"},
+  {"name": "BBC News", "url": "https://feeds.bbci.co.uk/news/rss.xml", "lang": "en", "category": null},
+  {"name": "BBC Sport", "url": "https://feeds.bbci.co.uk/sport/rss.xml", "lang": "en", "category": "sport"},
+  {"name": "The Verge", "url": "https://www.theverge.com/rss/index.xml", "lang": "en", "category": "tech"},
+  {"name": "TechCrunch", "url": "https://techcrunch.com/feed/", "lang": "en", "category": "tech"},
+  {"name": "Engadget", "url": "https://www.engadget.com/rss.xml", "lang": "en", "category": "tech"},
+  {"name": "CoinDesk", "url": "https://www.coindesk.com/arc/outboundfeeds/rss/", "lang": "en", "category": "crypto"},
+  {"name": "ESPN", "url": "https://www.espn.com/espn/rss/news", "lang": "en", "category": "sport"},
+  {"name": "Polygon", "url": "https://www.polygon.com/rss/index.xml", "lang": "en", "category": "jeux-video"}
+]

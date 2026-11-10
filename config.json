@@ -1,0 +1,32 @@
+{
+  "site_name": "Le Mag Utile",
+  "site_name_en": "The Useful Mag",
+  "logo_html": "Le Mag <b>Utile</b>",
+  "logo_html_en": "The Useful <b>Mag</b>",
+  "tagline": "Des réponses claires à vos questions du quotidien",
+  "tagline_en": "Clear answers to your everyday questions",
+  "description": "Le Mag Utile publie chaque jour des guides et conseils pratiques : argent, tech, santé, maison, voyage, cuisine, sport et bien plus, ainsi que les actus du web.",
+  "description_en": "The Useful Mag publishes practical guides and tips every day: money, tech, health, home, travel, food, sports and more, plus the latest news from the web.",
+  "base_url": "https://jeremstyke.github.io/lemagutile",
+  "custom_domain": "",
+  "google_verification": "",
+  "publisher": "Jérémy Dacier-Jury",
+  "contact_url": "https://t.me/jeremstyke?direct",
+  "categories": [
+    {"slug": "argent", "emoji": "💰", "name": "Argent", "name_en": "Money", "description": "Budget, épargne, banque, impôts et aides : nos guides pour mieux gérer votre argent.", "description_en": "Budgeting, saving, banking and taxes: our guides to manage your money better."},
+    {"slug": "tech", "emoji": "💻", "name": "Tech", "name_en": "Tech", "description": "Smartphones, ordinateurs, applis et internet : astuces et tutoriels simples.", "description_en": "Smartphones, computers, apps and the internet: simple tips and tutorials."},
+    {"slug": "crypto", "emoji": "🪙", "name": "Crypto", "name_en": "Crypto", "description": "Bitcoin, Ethereum, wallets et blockchain expliqués simplement.", "description_en": "Bitcoin, Ethereum, wallets and blockchain explained simply."},
+    {"slug": "business", "emoji": "💼", "name": "Business", "name_en": "Business", "description": "Créer son activité, auto-entreprise, marketing et revenus en ligne.", "description_en": "Starting a business, freelancing, marketing and online income."},
+    {"slug": "sante", "emoji": "🩺", "name": "Santé", "name_en": "Health", "description": "Bien-être, sommeil, alimentation et forme : des conseils pour le quotidien.", "description_en": "Wellness, sleep, nutrition and fitness: everyday advice."},
+    {"slug": "maison", "emoji": "🏡", "name": "Maison", "name_en": "Home", "description": "Ménage, bricolage, jardin, déco et économies d'énergie.", "description_en": "Cleaning, DIY, garden, decor and energy savings."},
+    {"slug": "cuisine", "emoji": "🍳", "name": "Cuisine", "name_en": "Food", "description": "Recettes faciles, astuces de cuisine et conservation des aliments.", "description_en": "Easy recipes, cooking tips and food storage."},
+    {"slug": "voyage", "emoji": "✈️", "name": "Voyage", "name_en": "Travel", "description": "Destinations, bons plans et conseils pour voyager malin.", "description_en": "Destinations, deals and tips to travel smarter."},
+    {"slug": "sport", "emoji": "⚽", "name": "Sport", "name_en": "Sports", "description": "Football, running, musculation et tous les sports : guides et conseils.", "description_en": "Football, running, strength training and all sports: guides and tips."},
+    {"slug": "jeux-video", "emoji": "🎮", "name": "Jeux vidéo", "name_en": "Gaming", "description": "Consoles, PC, mobile : guides, astuces et actus du jeu vidéo.", "description_en": "Consoles, PC and mobile: gaming guides, tips and news."},
+    {"slug": "famille", "emoji": "👨‍👩‍👧", "name": "Famille", "name_en": "Family", "description": "Enfants, parentalité, éducation et organisation familiale.", "description_en": "Kids, parenting, education and family life."},
+    {"slug": "auto", "emoji": "🚗", "name": "Auto", "name_en": "Cars", "description": "Entretien, achat, permis et économies sur la voiture.", "description_en": "Car maintenance, buying, driving and saving money."},
+    {"slug": "animaux", "emoji": "🐾", "name": "Animaux", "name_en": "Pets", "description": "Chiens, chats et autres animaux : soins, alimentation et éducation.", "description_en": "Dogs, cats and other pets: care, food and training."},
+    {"slug": "emploi", "emoji": "📄", "name": "Emploi", "name_en": "Careers", "description": "CV, entretien, droits du salarié et reconversion.", "description_en": "Resumes, interviews, workplace rights and career changes."},
+    {"slug": "demarches", "emoji": "📋", "name": "Démarches", "name_en": "Paperwork", "description": "Papiers, administration, CAF, impôts : les démarches expliquées pas à pas.", "description_en": "Official paperwork, admin and taxes explained step by step."}
+  ]
+}
