@@ -3,6 +3,7 @@ title: Comment conserver le pain pour qu'il reste frais plus longtemps
 seo_title: Comment conserver le pain frais plus longtemps : le guide
 description: Baguette dure dès le lendemain ? Découvrez comment conserver le pain frais plus longtemps, où le ranger, comment le congeler et que faire du pain rassis.
 category: cuisine
+translation: how-to-keep-bread-fresh
 lang: fr
 date: 2026-11-10T07:50:00+01:00
 tags: pain, conservation, congélation, anti-gaspillage, cuisine

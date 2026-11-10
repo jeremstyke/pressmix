@@ -3,6 +3,7 @@ title: How to Descale a Kettle Naturally (Vinegar, Lemon, Citric Acid)
 seo_title: How to Descale a Kettle: Vinegar, Lemon or Citric Acid
 description: White crust in your kettle? Here is how to descale a kettle with vinegar, lemon or citric acid, step by step, how often to do it and how to slow limescale down.
 category: maison
+translation: comment-detartrer-une-bouilloire
 lang: en
 date: 2026-11-10T10:30:00+01:00
 tags: kettle, limescale, cleaning, white vinegar, citric acid

@@ -3,6 +3,7 @@ title: How to Fall Asleep Faster: 10 Tips That Actually Help
 seo_title: How to Fall Asleep Faster: 10 Simple Tips That Work
 description: Lying awake for ages? Here is how to fall asleep faster with simple habits: a regular schedule, a cool dark bedroom, fewer screens and easy breathing tricks.
 category: sante
+translation: comment-s-endormir-rapidement
 lang: en
 date: 2026-11-10T09:45:00+01:00
 tags: sleep, insomnia, bedtime routine, wellness, relaxation

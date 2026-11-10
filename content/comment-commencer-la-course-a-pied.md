@@ -3,6 +3,7 @@ title: Comment commencer la course à pied quand on est débutant
 seo_title: Comment commencer la course à pied : le guide du débutant
 description: Vous voulez vous mettre au running sans vous blesser ? Voici comment commencer la course à pied : alterner marche et course, s'équiper et progresser pas à pas.
 category: sport
+translation: how-to-start-running-as-a-beginner
 lang: fr
 date: 2026-11-10T14:40:00+01:00
 tags: course à pied, running, débutant, entraînement, sport

@@ -3,6 +3,7 @@ title: Comment sauvegarder les photos de son téléphone (Android et iPhone)
 seo_title: Comment sauvegarder les photos de son téléphone : 4 méthodes
 description: Ne perdez plus vos souvenirs : découvrez comment sauvegarder les photos de votre téléphone Android ou iPhone sur le cloud, un ordinateur ou un disque dur.
 category: tech
+translation: how-to-back-up-photos-from-your-phone
 lang: fr
 date: 2026-11-10T21:45:00+01:00
 tags: photos, sauvegarde, cloud, smartphone, disque dur

@@ -3,6 +3,7 @@ title: Comment vérifier la pression des pneus de sa voiture
 seo_title: Comment vérifier la pression des pneus : le guide pas à pas
 description: Vérifier la pression des pneus prend cinq minutes et améliore sécurité et consommation. Voici où trouver la bonne pression et comment la contrôler pas à pas.
 category: auto
+translation: how-to-check-tire-pressure
 lang: fr
 date: 2026-11-10T10:45:00+01:00
 tags: pneus, pression, entretien voiture, sécurité routière, station-service

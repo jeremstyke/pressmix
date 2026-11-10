@@ -3,6 +3,7 @@ title: What to Pack in a Carry-On Bag: The Complete Checklist
 seo_title: What to Pack in a Carry-On Bag: Checklist and Rules
 description: Traveling with hand luggage only? Here is what to pack in a carry-on bag, the liquid rules to know, what is banned and smart packing tips to fit everything in.
 category: voyage
+translation: que-mettre-dans-une-valise-cabine
 lang: en
 date: 2026-11-10T11:15:00+01:00
 tags: carry-on, hand luggage, packing list, air travel, travel tips

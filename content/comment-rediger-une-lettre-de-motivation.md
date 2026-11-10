@@ -3,6 +3,7 @@ title: Comment rédiger une lettre de motivation qui donne envie de vous rencont
 seo_title: Comment rédiger une lettre de motivation : la méthode
 description: Page blanche devant votre lettre de motivation ? Voici la structure en trois parties, les erreurs à éviter et nos conseils pour convaincre un recruteur.
 category: emploi
+translation: how-to-write-a-cover-letter
 lang: fr
 date: 2026-11-10T12:20:00+01:00
 tags: lettre de motivation, candidature, recherche d'emploi, CV, recrutement

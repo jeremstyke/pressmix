@@ -3,6 +3,7 @@ title: Comment réussir une pâte à crêpes sans grumeaux
 seo_title: Comment réussir une pâte à crêpes sans grumeaux : la recette
 description: Grumeaux, crêpes qui collent ou se déchirent ? Voici la recette de base de la pâte à crêpes, la bonne méthode pour la mélanger et nos astuces de cuisson.
 category: cuisine
+translation: how-to-make-crepes
 lang: fr
 date: 2026-11-10T20:30:00+01:00
 tags: crêpes, pâte à crêpes, recette, dessert, chandeleur

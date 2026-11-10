@@ -3,6 +3,7 @@ title: How to Check Tire Pressure (and What the Right Pressure Is)
 seo_title: How to Check Tire Pressure: Step-by-Step Guide for Drivers
 description: Learn how to check tire pressure in five minutes, where to find the right pressure for your car and why it matters for safety, fuel use and tire life.
 category: auto
+translation: comment-verifier-la-pression-des-pneus
 lang: en
 date: 2026-11-10T14:30:00+01:00
 tags: tire pressure, car maintenance, tires, road safety, fuel economy

@@ -3,6 +3,7 @@ title: Comment économiser sur ses courses : 12 astuces efficaces
 seo_title: Comment économiser sur ses courses : 12 astuces simples
 description: Vos courses coûtent de plus en plus cher ? Découvrez 12 astuces concrètes pour réduire votre ticket de caisse sans sacrifier la qualité de vos repas.
 category: argent
+translation: how-to-save-money-on-groceries
 lang: fr
 date: 2026-11-10T07:05:00+01:00
 tags: courses, économies, supermarché, budget, alimentation

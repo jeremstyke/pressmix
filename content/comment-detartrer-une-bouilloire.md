@@ -3,6 +3,7 @@ title: Comment détartrer une bouilloire facilement et naturellement
 seo_title: Comment détartrer une bouilloire : 4 méthodes naturelles
 description: Du calcaire au fond de votre bouilloire ? Voici comment détartrer une bouilloire avec du vinaigre blanc, de l'acide citrique ou du citron, étape par étape.
 category: maison
+translation: how-to-descale-a-kettle
 lang: fr
 date: 2026-11-10T08:30:00+01:00
 tags: bouilloire, calcaire, vinaigre blanc, acide citrique, ménage

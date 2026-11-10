@@ -3,6 +3,7 @@ title: Comment occuper un enfant sans écran : 20 idées simples
 seo_title: Comment occuper un enfant sans écran : 20 idées faciles
 description: Votre enfant réclame la tablette ? Voici 20 idées pour occuper un enfant sans écran à la maison ou dehors, avec peu de matériel et selon son âge.
 category: famille
+translation: screen-free-activities-for-kids
 lang: fr
 date: 2026-11-10T16:10:00+01:00
 tags: enfants, activités, écrans, parentalité, jeux

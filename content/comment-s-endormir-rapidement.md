@@ -3,6 +3,7 @@ title: Comment s'endormir rapidement : 10 conseils qui marchent
 seo_title: Comment s'endormir rapidement : 10 conseils efficaces
 description: Vous tournez dans votre lit sans trouver le sommeil ? Voici 10 conseils simples pour s'endormir rapidement, du rituel du soir à la gestion des écrans.
 category: sante
+translation: how-to-fall-asleep-faster
 lang: fr
 date: 2026-11-10T09:15:00+01:00
 tags: sommeil, endormissement, insomnie, bien-être, routine du soir

@@ -3,6 +3,7 @@ title: What Is a Crypto Wallet and How Does It Work?
 seo_title: What Is a Crypto Wallet? Types, How It Works and Safety
 description: What is a crypto wallet? Learn how it works, hot vs cold wallets, custodial vs self-custody options and the key rules to keep your crypto safe from scams.
 category: crypto
+translation: qu-est-ce-qu-un-wallet-crypto
 lang: en
 date: 2026-11-10T19:30:00+01:00
 tags: crypto wallet, bitcoin, seed phrase, cold wallet, blockchain security

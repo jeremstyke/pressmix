@@ -3,6 +3,7 @@ title: Comment créer un mot de passe solide et facile à retenir
 seo_title: Comment créer un mot de passe solide (et s'en souvenir)
 description: Un mot de passe trop simple se pirate en quelques secondes. Découvrez comment créer un mot de passe solide, facile à retenir, et protéger vos comptes en ligne.
 category: tech
+translation: how-to-create-a-strong-password
 lang: fr
 date: 2026-11-10T10:10:00+01:00
 tags: mot de passe, sécurité, cybersécurité, gestionnaire de mots de passe, double authentification

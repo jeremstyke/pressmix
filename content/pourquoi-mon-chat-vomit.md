@@ -3,6 +3,7 @@ title: Pourquoi mon chat vomit ? Causes fréquentes et quand s'inquiéter
 seo_title: Pourquoi mon chat vomit ? Causes et quand consulter
 description: Votre chat vomit souvent ? Boules de poils, repas trop rapide ou maladie : les causes fréquentes, les bons gestes et quand consulter le vétérinaire.
 category: animaux
+translation: why-is-my-cat-throwing-up
 lang: fr
 date: 2026-11-10T11:30:00+01:00
 tags: chat, vomissements, boules de poils, santé animale, vétérinaire

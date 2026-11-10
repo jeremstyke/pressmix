@@ -3,6 +3,7 @@ title: Comment enlever l'humidité dans une maison ou un appartement
 seo_title: Enlever l'humidité dans une maison : causes et solutions
 description: Buée, odeur de moisi, taches noires ? Découvrez comment enlever l'humidité dans une maison : aérer, chauffer, ventiler et traiter les causes durablement.
 category: maison
+translation: how-to-reduce-humidity-in-a-house
 lang: fr
 date: 2026-11-10T19:20:00+01:00
 tags: humidité, moisissures, aération, VMC, condensation

@@ -3,6 +3,7 @@ title: How to Start Running as a Beginner (Without Getting Injured)
 seo_title: How to Start Running as a Beginner: An Easy Walk-Run Plan
 description: Want to start running but not sure where to begin? Here is a simple walk-run plan for beginners, the right pace, gear basics and tips to avoid getting injured.
 category: sport
+translation: comment-commencer-la-course-a-pied
 lang: en
 date: 2026-11-10T12:00:00+01:00
 tags: running, beginner, jogging, fitness, walk-run

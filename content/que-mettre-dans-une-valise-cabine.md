@@ -3,6 +3,7 @@ title: Que mettre dans une valise cabine ? La liste complète et les règles
 seo_title: Que mettre dans une valise cabine : liste et règles
 description: Liquides, batteries, objets interdits : découvrez quoi mettre dans votre valise cabine, ce qui doit rester en soute et nos astuces pour voyager léger.
 category: voyage
+translation: what-to-pack-in-a-carry-on-bag
 lang: fr
 date: 2026-11-10T14:00:00+01:00
 tags: valise cabine, bagage à main, avion, liquides, voyage

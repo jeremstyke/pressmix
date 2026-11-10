@@ -3,6 +3,7 @@ title: Qu'est-ce qu'un wallet crypto et comment choisir le bon ?
 seo_title: Qu'est-ce qu'un wallet crypto ? Définition et types
 description: Wallet chaud, froid, custodial, seed phrase : on vous explique simplement ce qu'est un wallet crypto, comment il fonctionne et comment sécuriser vos cryptos.
 category: crypto
+translation: what-is-a-crypto-wallet
 lang: fr
 date: 2026-11-10T16:55:00+01:00
 tags: wallet, portefeuille crypto, seed phrase, sécurité, bitcoin
