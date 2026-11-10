@@ -1,11 +1,51 @@
 [
 {
+"title": "Plus de 500 milliards d’euros en dix ans : ces fortunes englouties par la France rien que pour payer les intérêts de sa dette",
+"url": "https://www.lefigaro.fr/conjoncture/plus-de-500-milliards-d-euros-en-dix-ans-ces-fortunes-englouties-par-la-france-rien-que-pour-rembourser-sa-dette-20261110",
+"date": "2026-11-10T18:17:20+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
+"title": "Après les supermarchés, les appareils ménagers pourraient être la prochaine cible des cyberattaques",
+"url": "https://www.lefigaro.fr/secteur/high-tech/apres-les-supermarches-les-appareils-menagers-pourraient-etre-la-prochaine-cible-des-cyberattaques-20261110",
+"date": "2026-11-10T18:05:04+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
 "title": "Yaëlle Amsellem-Mainguy, sociologue : « Par les blocages, les lycéens ont trouvé les moyens de se faire entendre »",
 "url": "https://www.lemonde.fr/idees/article/2026/11/10/yaelle-amsellem-mainguy-sociologue-par-les-blocages-les-lyceens-ont-trouve-les-moyens-de-se-faire-entendre_6808881_3232.html",
 "date": "2026-11-10T18:00:16+01:00",
 "source": "Le Monde",
 "lang": "fr",
 "category": null
+},
+{
+"title": "Vers une importante hausse du taux du livret A en février, porté par l’inflation ?",
+"url": "https://www.lefigaro.fr/conjoncture/vers-une-importante-hausse-du-taux-du-livret-a-en-fevrier-porte-par-l-inflation-20261110",
+"date": "2026-11-10T17:55:32+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
+"title": "Singapour veut devenir un nouveau coffre-fort pour l’or des banques centrales du monde entier",
+"url": "https://www.lefigaro.fr/conjoncture/singapour-veut-devenir-un-nouveau-coffre-fort-pour-l-or-des-banques-centrales-du-monde-entier-20261110",
+"date": "2026-11-10T17:55:02+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
+"title": "Accor : Parvus veut accélérer la succession de Sébastien Bazin",
+"url": "https://www.lefigaro.fr/societes/accor-parvus-veut-accelerer-la-succession-de-sebastien-bazin-20261110",
+"date": "2026-11-10T17:51:08+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
 },
 {
 "title": "Le romancier Kamel Daoud condamné à cinq ans de prison en Algérie pour son roman « Houris »",
@@ -32,12 +72,52 @@
 "category": null
 },
 {
+"title": "Loi Résilience : les députés suppriment l’article qui aurait empêché l’État d’imposer des portes dérobées",
+"url": "https://www.numerama.com/cyberguerre/2371907-loi-resilience-les-deputes-suppriment-larticle-qui-aurait-empeche-letat-dimposer-des-portes-derobees.html",
+"date": "2026-11-10T17:19:22+00:00",
+"source": "Numerama",
+"lang": "fr",
+"category": "tech"
+},
+{
+"title": "1,5 million de véhicules produits par an : en Corée du Sud, plongée dans l’usine historique de Hyundai, la plus grande au monde",
+"url": "https://www.lefigaro.fr/economie/1-5-million-de-vehicules-produits-par-an-en-coree-du-sud-plongee-dans-l-usine-historique-de-hyundai-la-plus-grande-au-monde-20261110",
+"date": "2026-11-10T17:18:06+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
+"title": "Hausse des taux, entreprises prudentes… Comment les prévisions économiques trop optimistes du gouvernement pèsent sur l’emploi",
+"url": "https://www.lefigaro.fr/conjoncture/hausse-des-taux-entreprises-prudentes-comment-les-previsions-economiques-trop-optimistes-du-gouvernement-pesent-sur-l-emploi-20261110",
+"date": "2026-11-10T17:17:13+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
 "title": "11.11 : le Black Friday chinois casse les prix de la Tech, voici les meilleures offres en DIRECT",
 "url": "https://www.frandroid.com/bons-plans/3305805_11-11-le-black-friday-chinois-casse-les-prix-de-la-tech-voici-les-meilleures-offres-en-direct",
 "date": "2026-11-10T17:16:24+00:00",
 "source": "Frandroid",
 "lang": "fr",
 "category": "tech"
+},
+{
+"title": "Can you use WD-40 on your electronics?",
+"url": "https://www.engadget.com/2307782/can-you-use-wd40-on-electronics/",
+"date": "2026-11-10T17:15:00+00:00",
+"source": "Engadget",
+"lang": "en",
+"category": "tech"
+},
+{
+"title": "WCL: Hacken vs Chelsea LIVE!",
+"url": "https://www.skysports.com/football/bk-hcken-women-vs-chelsea-women/live/578259",
+"date": "2026-11-10T17:15:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
 },
 {
 "title": "Black Friday 2026 : les meilleures offres disponibles chez Amazon, Fnac, Boulanger ce mardi",
@@ -62,6 +142,14 @@
 "source": "CoinDesk",
 "lang": "en",
 "category": "crypto"
+},
+{
+"title": "«J’ai pris moins de vacances cet été pour cela» : quand des salariés posent des congés pour la sortie du jeu vidéo événement GTA VI",
+"url": "https://www.lefigaro.fr/secteur/high-tech/gta-vi-zelda-world-of-warcraft-quand-les-sorties-de-jeux-video-poussent-les-salaries-a-deserter-leur-bureau-20261024",
+"date": "2026-11-10T17:07:19+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
 },
 {
 "title": "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash",
@@ -152,6 +240,14 @@
 "category": "crypto"
 },
 {
+"title": "Reynolds: Fearless Love can lead Packers to Super Bowl",
+"url": "https://www.skysports.com/nfl/news/12040/13610682/jordan-love-green-bay-packers-quarterback-is-fearless-and-can-lead-matt-lafleurs-team-to-super-bowl-says-neil-reynolds",
+"date": "2026-11-10T17:00:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
 "title": "Allemagne : commémorations des 80 ans de la Nuit de Cristal, un des survivants témoigne",
 "url": "https://www.france24.com/fr/vid%C3%A9o/20261110-allemagne-comm%C3%A9morations-des-80-ans-de-la-nuit-de-cristal-un-des-survivants-t%C3%A9moigne",
 "date": "2026-11-10T16:56:57+00:00",
@@ -192,6 +288,14 @@
 "category": "tech"
 },
 {
+"title": "Baisse du prix du gazole : la libération des stocks stratégiques est-elle vraiment la seule explication ?",
+"url": "https://www.lefigaro.fr/conjoncture/baisse-du-prix-du-gazole-la-liberation-des-stocks-strategiques-est-elle-vraiment-la-seule-explication-20261110",
+"date": "2026-11-10T16:56:09+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
 "title": "Singles Day 2026 : AliExpress et Joybuy multiplient les bons plans, voici notre sélection",
 "url": "https://www.numerama.com/tech/2365399-singles-day-2026-aliexpress-et-joybuy-multiplient-les-bons-plans-voici-notre-selection.html",
 "date": "2026-11-10T16:55:58+00:00",
@@ -206,6 +310,14 @@
 "source": "Polygon",
 "lang": "en",
 "category": "jeux-video"
+},
+{
+"title": "Anthr opic vise une valorisation allant jusqu’à 1.400 milliards de dollars pour son entrée en Bourse",
+"url": "https://www.lefigaro.fr/secteur/high-tech/anthropic-prevoit-de-lever-jusqu-a-64-milliards-de-dollars-pour-son-entree-en-bourse-20261110",
+"date": "2026-11-10T16:51:05+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
 },
 {
 "title": "Sundrop turns your endless baby photos into recaps, time-lapses and more — without AI",
@@ -278,6 +390,14 @@
 "source": "Journal du Geek",
 "lang": "fr",
 "category": "tech"
+},
+{
+"title": "Could Clarke be UK fighter of year after Billam-Smith KO?",
+"url": "https://www.skysports.com/boxing/news/12040/13610713/cheavon-clarke-should-be-on-the-shortlist-for-british-fighter-of-the-year-after-chris-billam-smith-knockout-victory",
+"date": "2026-11-10T16:44:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
 },
 {
 "title": "Marathon’s Big PvE Update Is Starting to Look a Lot Like Destiny",
@@ -632,6 +752,22 @@
 "category": "tech"
 },
 {
+"title": "What do England do with Bethell for Australia ODIs?",
+"url": "https://www.skysports.com/cricket/news/12040/13610671/jacob-bethell-is-england-return-for-australia-odis-likely-to-happen-or-will-tom-banton-keep-openers-spot",
+"date": "2026-11-10T16:00:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
+"title": "Retraites : 40% des Français ignorent le principe du système par répartition",
+"url": "https://www.lefigaro.fr/social/retraites-40-des-francais-ignorent-le-principe-du-systeme-par-repartition-20261110",
+"date": "2026-11-10T15:59:33+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
 "title": "L’Assemblée nationale rejette la pétition pour la fermeture de CNews !",
 "url": "https://www.journaldugeek.com/2026/11/10/une-petition-pour-la-fermeture-de-cnews-obtient-plus-de-600-000-signatures-ce-qui-pourrait-se-passer-maintenant/",
 "date": "2026-11-10T15:59:27+00:00",
@@ -768,6 +904,14 @@
 "category": null
 },
 {
+"title": "Brundle's verdict as Mercedes seal title in 'chaotic Interlagos style'",
+"url": "https://www.skysports.com/f1/news/12040/13610204/sao-paulo-gp-martin-brundles-verdict-as-mercedes-seal-2026-f1-constructors-title-and-lando-norris-wins-wet-race-in-brazil",
+"date": "2026-11-10T15:20:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
 "title": "Le Goncourt britannique récompense un roman de SF qui résonne avec la polémique sur l’IA en France",
 "url": "https://www.numerama.com/pop-culture/2371623-le-goncourt-britannique-recompense-un-roman-de-sf-qui-resonne-avec-la-polemique-sur-lia-en-france.html",
 "date": "2026-11-10T15:19:00+00:00",
@@ -864,6 +1008,14 @@
 "category": "tech"
 },
 {
+"title": "Man Utd Q&A: Carrick, Poch, INEOS and more answered",
+"url": "https://www.skysports.com/football/news/12040/13610675/man-utd-qa-michael-carrick-mauricio-pochettino-ineos-and-more-kaveh-solhekol-answers-your-questions",
+"date": "2026-11-10T15:00:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
 "title": "David Walliams' career and controversies including Britain's Got Talent and Little Britain",
 "url": "https://www.bbc.co.uk/news/articles/c6d7q98z1yz3o?at_medium=RSS&at_campaign=rss",
 "date": "2026-11-10T14:53:28+00:00",
@@ -934,6 +1086,14 @@
 "source": "Journal du Geek",
 "lang": "fr",
 "category": "tech"
+},
+{
+"title": "Prime de Noël 2026 : date de versement, montant, bénéficiaires… Tout ce qu’il faut savoir sur cette aide",
+"url": "https://www.lefigaro.fr/social/prime-de-noel-2026-date-de-versement-montant-beneficiaires-tout-ce-qu-il-faut-savoir-sur-cette-aide-20261110",
+"date": "2026-11-10T14:32:12+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
 },
 {
 "title": "GTA 6 : une très mauvaise nouvelle technique se confirme",
@@ -1104,6 +1264,14 @@
 "category": "crypto"
 },
 {
+"title": "F1 planning to finish season in Middle East as Imola deadline passes",
+"url": "https://www.skysports.com/f1/news/12040/13610302/formula-1-proceeding-with-plans-to-finish-2026-season-in-middle-east-as-deadline-to-hold-race-at-imola-passes",
+"date": "2026-11-10T14:00:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
 "title": "World Cup finalists England still feel short of best",
 "url": "https://www.bbc.co.uk/sport/rugby-league/articles/ckzd6dmm5z19o?at_medium=RSS&at_campaign=rss",
 "date": "2026-11-10T13:58:00+00:00",
@@ -1118,6 +1286,14 @@
 "source": "Numerama",
 "lang": "fr",
 "category": "tech"
+},
+{
+"title": "Ombudsman all set for Japan Cup swansong",
+"url": "https://www.skysports.com/racing/news/12040/13610664/ombudsman-godolphin-great-set-for-japan-cup-swansong",
+"date": "2026-11-10T13:46:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
 },
 {
 "title": "Here's what the red dot on your Apple Watch means and how to clear it",
@@ -1184,6 +1360,14 @@
 "category": "tech"
 },
 {
+"title": "Merson: Man Utd transfer policy is to blame - not Carrick",
+"url": "https://www.skysports.com/football/news/12040/13610645/man-utds-transfer-policy-to-blame-for-clubs-worst-premier-league-start-and-not-michael-carrick-says-paul-merson",
+"date": "2026-11-10T13:30:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
 "title": "Who are the main candidates for the Aberdeen job?",
 "url": "https://www.bbc.co.uk/sport/football/articles/c3rryr85v874o?at_medium=RSS&at_campaign=rss",
 "date": "2026-11-10T13:24:07+00:00",
@@ -1214,6 +1398,14 @@
 "source": "Engadget",
 "lang": "en",
 "category": "tech"
+},
+{
+"title": "'He hasn't got many options' - McIlroy on DeChambeau joining DP World Tour",
+"url": "https://www.skysports.com/watch/video/13610639/golf-rory-mcilroy-welcomes-the-addition-of-bryson-dechambeau-to-the-dp-world-tour",
+"date": "2026-11-10T13:03:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
 },
 {
 "title": "1 salarié sur 11 : la prochaine récession pourrait déclencher une vague de licenciements liés à l’IA",
@@ -1280,12 +1472,28 @@
 "category": "sport"
 },
 {
+"title": "Casino : Daniel Kretinsky trouve un accord avec les créanciers et assoit sa domination sur le distributeur",
+"url": "https://www.lefigaro.fr/societes/casino-daniel-kretinsky-trouve-un-accord-avec-les-creanciers-et-assoit-sa-domination-sur-le-distributeur-20261110",
+"date": "2026-11-10T12:40:11+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
 "title": "Ripple Prime head Marc Asch to step down, Noel Kimmel named successor",
 "url": "https://www.coindesk.com/business/2026/11/09/ripple-prime-head-marc-asch-to-step-down-noel-kimmel-named-successor",
 "date": "2026-11-10T12:38:20+00:00",
 "source": "CoinDesk",
 "lang": "en",
 "category": "crypto"
+},
+{
+"title": "'You can't make a house on a puddle' - Merse criticises INEOS transfer policy",
+"url": "https://www.skysports.com/watch/video/13610614/manchester-united-paul-merson-criticises-ineos-transfer-policy-and-how-its-affected-michael-carricks-job-as-head-coach",
+"date": "2026-11-10T12:32:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
 },
 {
 "title": "HBO Max et Paramount+ : à quand la réunion des deux plateformes ? On a un début de réponse",
@@ -1344,6 +1552,22 @@
 "category": "tech"
 },
 {
+"title": "No further F1 engine upgrades handed out after final 2026 review period",
+"url": "https://www.skysports.com/f1/news/12040/13610600/f1-aduo-fia-announces-no-further-engine-upgrades-handed-out-after-final-review-period-of-2026-season",
+"date": "2026-11-10T12:00:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
+"title": "Sinner aiming for Australian Open return",
+"url": "https://www.skysports.com/tennis/news/12040/13610594/jannik-sinner-world-no-2-confirms-aim-to-return-to-tennis-at-australian-open-after-lengthy-absence-with-knee-injury",
+"date": "2026-11-10T12:00:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
 "title": "Watch: Meghan's first public appearance since father arrested",
 "url": "https://www.bbc.co.uk/news/videos/cqj9k9dj7vzlo?at_medium=RSS&at_campaign=rss",
 "date": "2026-11-10T11:57:14+00:00",
@@ -1360,10 +1584,26 @@
 "category": "tech"
 },
 {
+"title": "English golfer denies 'deliberate damage' after being disqualified from Q-School",
+"url": "https://www.skysports.com/golf/news/12040/13610593/dp-world-tour-english-golfer-frank-kennedy-denies-deliberate-damage-after-being-disqualified-from-q-school",
+"date": "2026-11-10T11:44:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
 "title": "Hill gets first England call-up as Konsa cover",
 "url": "https://www.bbc.co.uk/sport/football/articles/ckjrwrggjlryo?at_medium=RSS&at_campaign=rss",
 "date": "2026-11-10T11:41:27+00:00",
 "source": "BBC Sport",
+"lang": "en",
+"category": "sport"
+},
+{
+"title": "Warren: Fury trilogy fight could tempt Usyk to stay at heavyweight",
+"url": "https://www.skysports.com/boxing/news/12040/13610582/oleksandr-usyk-could-be-tempted-to-stay-at-heavyweight-for-a-trilogy-fight-with-tyson-fury-says-promoter-frank-warren",
+"date": "2026-11-10T11:35:00+00:00",
+"source": "Sky Sports",
 "lang": "en",
 "category": "sport"
 },
@@ -1432,6 +1672,14 @@
 "category": "tech"
 },
 {
+"title": "Pétrole : le prix du baril de Brent repasse sous les 90 dollars",
+"url": "https://www.lefigaro.fr/conjoncture/petrole-le-prix-du-baril-de-brent-repasse-sous-les-90-dollars-20261110",
+"date": "2026-11-10T11:12:24+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
 "title": "Avast vs Proton : 4 points pour choisir son VPN gratuit",
 "url": "https://www.journaldugeek.com/2026/11/10/avast-vs-proton-4-points-pour-choisir-son-vpn-gratuit/",
 "date": "2026-11-10T11:10:27+00:00",
@@ -1496,6 +1744,14 @@
 "category": "crypto"
 },
 {
+"title": "Carburants : le prix du gazole en baisse «de 18 centimes en moyenne» depuis le début du mois, indique Serge Papin",
+"url": "https://www.lefigaro.fr/conso/carburants-le-prix-du-gazole-en-baisse-de-18-centimes-en-moyenne-depuis-le-debut-du-mois-indique-serge-papin-20261110",
+"date": "2026-11-10T10:31:25+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
 "title": "Quels sont les jeux Nintendo Switch 2 qui se vendent le mieux ? Le classement mondial est sorti",
 "url": "https://www.jeuxvideo.com/news/2113467/quels-sont-les-jeux-nintendo-switch-2-qui-se-vendent-le-mieux-le-classement-mondial-est-sorti.htm",
 "date": "2026-11-10T10:30:08+01:00",
@@ -1510,6 +1766,14 @@
 "source": "Jeuxvideo.com",
 "lang": "fr",
 "category": "jeux-video"
+},
+{
+"title": "England Wheelchair rout Australia to reach World Cup final",
+"url": "https://www.skysports.com/rugby-league/news/12040/13610543/rugby-league-world-cup-england-wheelchair-score-record-points-total-against-home-nation-australia-to-reach-final",
+"date": "2026-11-10T10:17:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
 },
 {
 "title": "Waze pourrait bientôt afficher les cyclistes pour réduire les accidents grâce à Garmin",
@@ -1552,12 +1816,36 @@
 "category": "crypto"
 },
 {
+"title": "Tough-tackling Schlager proves his worth for Forest",
+"url": "https://www.skysports.com/football/news/12040/13610154/xaver-schlager-at-nottingham-forest-tough-tackling-replacement-for-elliot-anderson-proves-his-worth-to-new-club",
+"date": "2026-11-10T10:00:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
 "title": "The crypto wallet that grew up inside Telegram is striking out on its own",
 "url": "https://www.coindesk.com/business/2026/11/10/the-crypto-wallet-that-grew-up-inside-telegram-is-striking-out-on-its-own",
 "date": "2026-11-10T09:59:17+00:00",
 "source": "CoinDesk",
 "lang": "en",
 "category": "crypto"
+},
+{
+"title": "McIlroy: I need to be at 'absolute best' to win Race to Dubai",
+"url": "https://www.skysports.com/golf/news/12040/13610501/rory-mcilroy-feels-he-will-have-to-be-at-absolute-best-to-win-record-equalling-eighth-race-to-dubai-title",
+"date": "2026-11-10T09:55:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
+"title": "La croissance du PIB en 2026 attendue «autour de 0,3%» plutôt que 0,4%, déclare le gouverneur de la Banque de France",
+"url": "https://www.lefigaro.fr/conjoncture/la-croissance-du-pib-en-2026-attendue-autour-de-0-3-plutot-que-0-4-declare-le-gouverneur-de-la-banque-de-france-20261110",
+"date": "2026-11-10T09:39:52+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
 },
 {
 "title": "GTA VI will be available on Xbox Cloud Gaming for Xbox One consoles",
@@ -1680,6 +1968,14 @@
 "category": "sport"
 },
 {
+"title": "Le chômage en France expliqué en quatre graphiques",
+"url": "https://www.lefigaro.fr/social/visualisez-l-evolution-du-taux-de-chomage-en-france-20261110",
+"date": "2026-11-10T08:30:59+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
 "title": "Vote for your greatest all-British boxing fight",
 "url": "https://www.bbc.co.uk/sport/boxing/articles/cq5yn477mn51o?at_medium=RSS&at_campaign=rss",
 "date": "2026-11-10T08:30:49+00:00",
@@ -1694,6 +1990,30 @@
 "source": "Journal du Geek",
 "lang": "fr",
 "category": "tech"
+},
+{
+"title": "'Pass to Steph!' - Butler issues wise words from bench as Warriors win again",
+"url": "https://www.skysports.com/nba/news/12040/13610478/nba-jimmy-butler-dresses-up-as-coach-and-says-pass-to-steph-as-golden-state-warriors-win-eighth-straight-match",
+"date": "2026-11-10T08:30:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
+},
+{
+"title": "Le chômage quasiment stable, à 8,2%, au troisième trimestre",
+"url": "https://www.lefigaro.fr/social/le-chomage-quasiment-stable-a-8-2-au-troisieme-trimestre-20261110",
+"date": "2026-11-10T08:21:04+01:00",
+"source": "Le Figaro Économie",
+"lang": "fr",
+"category": "argent"
+},
+{
+"title": "Bentley: I'd happily go to Ireland and beat McKenna in his home town!",
+"url": "https://www.skysports.com/boxing/news/12040/13610207/denzel-bentley-id-happily-go-to-ireland-beat-aaron-mckenna-in-his-home-town-and-bring-the-belt-back-to-england",
+"date": "2026-11-10T08:15:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport"
 },
 {
 "title": "How good is Hamilton and how long can he stay in F1? - Q&A",
