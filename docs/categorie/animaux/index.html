@@ -27,6 +27,7 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;letter-spac
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px}
 .card:hover{border-color:var(--ink)}.card h2,.card h3{font-size:19px}.card p{color:var(--mut);font-size:15px}
+.nc{background:var(--soft)}.nc .tag{color:var(--mut)}
 .tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--acc)}
 .meta{font-size:13px;color:var(--mut);margin-top:auto}
 .news{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 18px}
@@ -54,9 +55,8 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:26px 0;color:var
 <main class="w">
 <p class="crumbs"><a href="/">Accueil</a> › Animaux</p>
 <section class="hero"><h1>🐾 Animaux</h1><p>Chiens, chats et autres animaux : soins, alimentation et éducation.</p></section>
-<div class="grid" style="margin-top:22px"><a class="card" href="/pourquoi-mon-chat-vomit/"><span class="tag">🐾 Animaux</span>
-<h2>Pourquoi mon chat vomit ? Causes fréquentes et quand s&#x27;inquiéter</h2><p>Votre chat vomit souvent ? Boules de poils, repas trop rapide ou maladie : les causes fréquentes, les bons gestes et quand consulter le vétérinaire.</p><span class="meta">10 novembre 2026 · 3 min de lecture</span></a></div>
-
+<div style="margin-top:22px"><div class="grid"><a class="card" href="/pourquoi-mon-chat-vomit/"><span class="tag">🐾 Animaux</span>
+<h2>Pourquoi mon chat vomit ? Causes fréquentes et quand s&#x27;inquiéter</h2><p>Votre chat vomit souvent ? Boules de poils, repas trop rapide ou maladie : les causes fréquentes, les bons gestes et quand consulter le vétérinaire.</p><span class="meta">10 novembre 2026 · 3 min de lecture</span></a></div></div>
 
 </main>
 <footer><div class="w"><div>© 2026 PressMix</div><div><a href="/proposer-un-article/">Proposer un article</a> · <a href="/plan-du-site/">Plan du site</a> · <a href="/mentions-legales/">Mentions légales</a> · <a href="https://pressmix-production.up.railway.app/rss.xml">RSS</a></div></div></footer>

@@ -27,6 +27,7 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;letter-spac
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px}
 .card:hover{border-color:var(--ink)}.card h2,.card h3{font-size:19px}.card p{color:var(--mut);font-size:15px}
+.nc{background:var(--soft)}.nc .tag{color:var(--mut)}
 .tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--acc)}
 .meta{font-size:13px;color:var(--mut);margin-top:auto}
 .news{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 18px}
@@ -54,10 +55,9 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:26px 0;color:var
 <main class="w">
 <p class="crumbs"><a href="/">Accueil</a> › Cuisine</p>
 <section class="hero"><h1>🍳 Cuisine</h1><p>Recettes faciles, astuces de cuisine et conservation des aliments.</p></section>
-<div class="grid" style="margin-top:22px"><a class="card" href="/combien-de-temps-se-conserve-un-oeuf/"><span class="tag">🍳 Cuisine</span>
+<div style="margin-top:22px"><div class="grid"><a class="card" href="/combien-de-temps-se-conserve-un-oeuf/"><span class="tag">🍳 Cuisine</span>
 <h2>Combien de temps se conserve un œuf ? (cru, dur, au frigo)</h2><p>Œuf cru, œuf dur, au réfrigérateur ou à température ambiante : voici combien de temps se conserve un œuf, comment lire la date et le test de l&#x27;eau pour savoir s&#x27;il est encore bon.</p><span class="meta">10 novembre 2026 · 3 min de lecture</span></a><a class="card" href="/comment-conserver-le-pain/"><span class="tag">🍳 Cuisine</span>
-<h2>Comment conserver le pain pour qu&#x27;il reste frais plus longtemps</h2><p>Baguette dure dès le lendemain ? Découvrez comment conserver le pain frais plus longtemps, où le ranger, comment le congeler et que faire du pain rassis.</p><span class="meta">10 novembre 2026 · 3 min de lecture</span></a></div>
-
+<h2>Comment conserver le pain pour qu&#x27;il reste frais plus longtemps</h2><p>Baguette dure dès le lendemain ? Découvrez comment conserver le pain frais plus longtemps, où le ranger, comment le congeler et que faire du pain rassis.</p><span class="meta">10 novembre 2026 · 3 min de lecture</span></a></div></div>
 
 </main>
 <footer><div class="w"><div>© 2026 PressMix</div><div><a href="/proposer-un-article/">Proposer un article</a> · <a href="/plan-du-site/">Plan du site</a> · <a href="/mentions-legales/">Mentions légales</a> · <a href="https://pressmix-production.up.railway.app/rss.xml">RSS</a></div></div></footer>
