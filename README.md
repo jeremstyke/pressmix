@@ -5,7 +5,7 @@
 **L'actualité et les guides pratiques du quotidien, en français et en anglais.**
 *News and everyday guides, in French and English.*
 
-[🇫🇷 Lire PressMix](https://pressmix-production.up.railway.app/) · [🇬🇧 Read in English](https://pressmix-production.up.railway.app/en/) · [✍️ Proposer un article](https://pressmix-production.up.railway.app/proposer-un-article/)
+[🇫🇷 Lire PressMix](https://jeremstyke.github.io/pressmix/) · [🇬🇧 Read in English](https://jeremstyke.github.io/pressmix/en/) · [✍️ Proposer un article](https://jeremstyke.github.io/pressmix/proposer-un-article/)
 
 </div>
 
@@ -40,14 +40,14 @@ PressMix est un site d'actualité et de conseils pratiques mis à jour tout au l
 
 Vous avez une expertise à partager ? Proposez votre article gratuitement :
 
-- 🇫🇷 [Proposer un article](https://pressmix-production.up.railway.app/proposer-un-article/)
-- 🇬🇧 [Submit an article](https://pressmix-production.up.railway.app/en/submit-an-article/)
+- 🇫🇷 [Proposer un article](https://jeremstyke.github.io/pressmix/proposer-un-article/)
+- 🇬🇧 [Submit an article](https://jeremstyke.github.io/pressmix/en/submit-an-article/)
 
 Article original de 600 mots minimum, utile et bien structuré, avec un lien vers votre site.
 
 ## Suivre PressMix
 
-- 📡 Flux RSS : [français](https://pressmix-production.up.railway.app/rss.xml) · [anglais](https://pressmix-production.up.railway.app/en/rss.xml)
+- 📡 Flux RSS : [français](https://jeremstyke.github.io/pressmix/rss.xml) · [anglais](https://jeremstyke.github.io/pressmix/en/rss.xml)
 - 💬 Contact : [Telegram](https://t.me/jeremstyke?direct)
 
 ---

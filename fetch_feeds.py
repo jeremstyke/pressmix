@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 DATA = ROOT / "data" / "news.json"
 KEEP_DAYS, MAX_PER_FEED, MAX_TOTAL = 7, 25, 1500
-UA = "Mozilla/5.0 (compatible; PressMixBot/1.0; +https://pressmix-production.up.railway.app/)"
+UA = "Mozilla/5.0 (compatible; PressMixBot/1.0; +https://jeremstyke.github.io/pressmix/)"
 
 def text(el, *names):
     for n in names:
