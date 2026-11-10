@@ -22,7 +22,7 @@ NOW = dt.datetime.now(dt.timezone.utc)
 T = {
   "fr": dict(home="Accueil", cat="categorie", news="actus", sitemap="plan-du-site", legal="mentions-legales",
              news_t="Actus du web", news_d="Les dernières actualités des grands sites d'information, mises à jour plusieurs fois par jour.",
-             latest="Derniers articles", cats="Catégories", read="min de lecture", pub="Publié le", toc="Sommaire",
+             latest="À la une", cats="Catégories", read="min de lecture", pub="Publié le", toc="Sommaire",
              also="À lire aussi en", all="Tous les articles", page="page", soon="Les premiers articles arrivent très bientôt.",
              sitemap_t="Plan du site", legal_t="Mentions légales", all_news="Toutes les actus", more_news="Plus d'actus",
              cat_t="tous nos articles", nf="Page introuvable", nf_d="Cette page n'existe pas ou a été déplacée.", back="Retour à l'accueil",
@@ -30,7 +30,7 @@ T = {
              submit="proposer-un-article", submit_t="Proposer un article", by="Par", author_site="Le site de l'auteur"),
   "en": dict(home="Home", cat="category", news="news", sitemap="sitemap", legal="legal",
              news_t="News from the web", news_d="The latest headlines from major news sites, updated several times a day.",
-             latest="Latest articles", cats="Categories", read="min read", pub="Published on", toc="Contents",
+             latest="Top stories", cats="Categories", read="min read", pub="Published on", toc="Contents",
              also="More in", all="All articles", page="page", soon="The first articles are coming very soon.",
              sitemap_t="Sitemap", legal_t="Legal notice", all_news="All news", more_news="More news",
              cat_t="all our articles", nf="Page not found", nf_d="This page does not exist or has moved.", back="Back to home",
@@ -157,6 +157,7 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;letter-spac
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px}
 .card:hover{border-color:var(--ink)}.card h2,.card h3{font-size:19px}.card p{color:var(--mut);font-size:15px}
+.nc{background:var(--soft)}.nc .tag{color:var(--mut)}
 .tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--acc)}
 .meta{font-size:13px;color:var(--mut);margin-top:auto}
 .news{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 18px}
@@ -235,6 +236,23 @@ def author_box(a, lang):
         rel = CFG.get("submission_link_rel", "noopener")
         link = f' · <a href="{esc(a["author_url"])}" target="_blank" rel="{rel}">{esc(a.get("anchor") or T[lang]["author_site"])}</a>'
     return f'<p class="meta" style="margin-top:26px;padding:14px;background:var(--soft);border-radius:10px">✍️ {T[lang]["by"]} <strong>{esc(a["author"])}</strong>{link}</p>'
+
+def news_card(n, lang):
+    return (f'<a class="card nc" href="{esc(n["url"])}" target="_blank" rel="nofollow noopener">'
+            f'<span class="tag">📰 {esc(n["source"])}</span><h3>{esc(n["title"])}</h3>'
+            f'<span class="meta">{ago(n["dt"], lang)} · {esc(n["source"])} ↗</span></a>')
+
+def mix(arts, news, per=2):
+    """Mélange : 2 articles du site puis 1 actu RSS, etc. Le reste à la suite."""
+    out, ai, ni = [], 0, 0
+    while ai < len(arts) or ni < len(news):
+        for _ in range(per):
+            if ai < len(arts): out.append(("a", arts[ai])); ai += 1
+        if ni < len(news): out.append(("n", news[ni])); ni += 1
+    return out
+
+def render_mix(items, lang, h="h3"):
+    return '<div class="grid">' + "".join(card(x, h) if k == "a" else news_card(x, lang) for k, x in items) + "</div>"
 
 ld = lambda o: '<script type="application/ld+json">' + json.dumps(o, ensure_ascii=False) + "</script>"
 
@@ -382,18 +400,19 @@ def build():
         # Catégories
         for s, c in CATS.items():
             lst = [a for a in arts if a["category"] == s]
-            cnews = [n for n in news if n.get("category") == s][:8]
-            pages = max(1, math.ceil(len(lst) / PER_PAGE))
+            cnews = [n for n in news if n.get("category") == s][:max(12, len(lst))]
+            feed = mix(lst, cnews)
+            pages = max(1, math.ceil(len(feed) / PER_PAGE))
             for n in range(1, pages + 1):
-                chunk = lst[(n - 1) * PER_PAGE: n * PER_PAGE]
+                part = feed[(n - 1) * PER_PAGE: n * PER_PAGE]
+                chunk = [x for k, x in part if k == "a"]
                 base = lp(lang, t["cat"] + "/" + s + "/")
                 p = base + ("" if n == 1 else f"page/{n}/")
                 alt = both(lambda l: lp(l, T[l]["cat"] + "/" + s + "/")) if n == 1 else {lang: p}
                 body = f"""<p class="crumbs"><a href="{url(lp(lang))}">{t['home']}</a> › {esc(cname(c, lang))}</p>
 <section class="hero"><h1>{c['emoji']} {esc(cname(c, lang))}</h1><p>{esc(cdesc(c, lang))}</p></section>
-{('<div class="grid" style="margin-top:22px">' + "".join(card(a, "h2") for a in chunk) + "</div>") if chunk else f'<p style="color:var(--mut);margin:24px 0">{t["soon"]}</p>'}
-{pager(n, pages, base)}
-{(f'<h2 class="sec">{t["news_t"]} : {esc(cname(c, lang))}</h2>' + news_list(cnews, lang)) if cnews and n == 1 else ""}"""
+<div style="margin-top:22px">{render_mix(part, lang, "h2") if part else f'<p style="color:var(--mut)">{t["soon"]}</p>'}</div>
+{pager(n, pages, base)}"""
                 title = f"{cname(c, lang)} : {t['cat_t']}" + ("" if n == 1 else f" ({t['page']} {n})")
                 indexable = bool(chunk)
                 write(p, page(lang, title, cdesc(c, lang), p, body, s, noindex=not indexable, alt=alt))
@@ -411,17 +430,18 @@ def build():
         sitemap.append((abs_url(npath), NOW, both(lambda l: lp(l, T[l]["news"] + "/"))))
 
         # Accueil
-        pages = max(1, math.ceil(len(arts) / PER_PAGE))
+        feed = mix(arts, news[:max(30, len(arts))])
+        pages = max(1, math.ceil(len(feed) / PER_PAGE))
         for n in range(1, pages + 1):
-            chunk = arts[(n - 1) * PER_PAGE: n * PER_PAGE]
+            part = feed[(n - 1) * PER_PAGE: n * PER_PAGE]
             p = lp(lang, "" if n == 1 else f"page/{n}/")
             top = ""
             if n == 1:
                 top = f"""<section class="hero"><h1>{esc(g('tagline', lang))}</h1><p>{esc(g('description', lang))}</p></section>
-{(f'<h2 class="sec">{t["news_t"]}<a href="{url(npath)}">{t["all_news"]} →</a></h2>' + news_list(news[:10], lang)) if news else ""}
-<h2 class="sec">{t['cats']}</h2><div class="catgrid">{"".join(f'<a href="{url(lp(lang, t["cat"] + "/" + s + "/"))}"><span>{c["emoji"]}</span>{esc(cname(c, lang))}</a>' for s, c in CATS.items())}</div>
-<h2 class="sec">{t['latest']}</h2>"""
-            body = top + ('<div class="grid">' + "".join(card(a) for a in chunk) + "</div>" if chunk else f'<p style="color:var(--mut)">{t["soon"]}</p>') + pager(n, pages, lp(lang))
+<h2 class="sec">{t['latest']}<a href="{url(npath)}">{t["all_news"]} →</a></h2>"""
+            body = top + (render_mix(part, lang) if part else f'<p style="color:var(--mut)">{t["soon"]}</p>') + pager(n, pages, lp(lang))
+            if n == 1:
+                body += f"""<h2 class="sec">{t['cats']}</h2><div class="catgrid">{"".join(f'<a href="{url(lp(lang, t["cat"] + "/" + s + "/"))}"><span>{c["emoji"]}</span>{esc(cname(c, lang))}</a>' for s, c in CATS.items())}</div>"""
             ws = ld({"@context": "https://schema.org", "@type": "WebSite", "name": site, "url": abs_url(lp(lang)), "inLanguage": lang}) if n == 1 else ""
             write(p or ".", page(lang, f"{site} : {g('tagline', lang)}" if n == 1 else f"{t['all']} ({t['page']} {n})", g("description", lang), p, body,
                                  None, ws, alt=both(lambda l: lp(l)) if n == 1 else {lang: p}))
