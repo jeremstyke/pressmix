@@ -1,5 +1,7 @@
 # Consignes de rédaction (tâche quotidienne)
 
+Chaque jour : 15 à 20 articles en français et 15 à 20 articles en anglais.
+
 Chaque article = un fichier `content/<slug>.md`. Le slug = le nom du fichier, en minuscules, sans accents, mots séparés par des tirets, reprenant la requête visée (ex. `comment-detartrer-une-bouilloire`).
 
 ## Format
@@ -25,7 +27,7 @@ Introduction de 2 à 3 phrases qui répond directement à la question.
 ## Règles SEO
 
 - Une requête précise par article, réellement tapée par les gens (« comment… », « combien… », « pourquoi… », « meilleur… », « que faire si… »). Jamais deux articles sur la même requête : vérifier les slugs existants avant d'écrire.
-- 800 à 1 500 mots. Répondre à la question dès l'introduction, puis détailler.
+- Environ 600 mots (550 à 700). Répondre à la question dès l'introduction, puis détailler.
 - 4 à 8 sections `##`, sous-sections `###` si utile, listes à puces et étapes numérotées, **gras** sur les points clés, une section « En résumé » à la fin.
 - 2 à 4 liens internes vers des articles existants du site, en markdown : `[texte](/slug-de-l-article/)` (pour l'anglais : `/en/slug/`).
 - Contenu exact et utile : pas de chiffres inventés, pas de fausses citations. En santé, argent et droit, rester général et conseiller un professionnel quand c'est pertinent. Ne rien copier d'autres sites.

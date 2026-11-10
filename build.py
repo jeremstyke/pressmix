@@ -26,14 +26,16 @@ T = {
              also="À lire aussi en", all="Tous les articles", page="page", soon="Les premiers articles arrivent très bientôt.",
              sitemap_t="Plan du site", legal_t="Mentions légales", all_news="Toutes les actus", more_news="Plus d'actus",
              cat_t="tous nos articles", nf="Page introuvable", nf_d="Cette page n'existe pas ou a été déplacée.", back="Retour à l'accueil",
-             ago_min="il y a {} min", ago_h="il y a {} h", ago_d="il y a {} j", ext="Lien externe vers"),
+             ago_min="il y a {} min", ago_h="il y a {} h", ago_d="il y a {} j", ext="Lien externe vers",
+             submit="proposer-un-article", submit_t="Proposer un article", by="Par", author_site="Le site de l'auteur"),
   "en": dict(home="Home", cat="category", news="news", sitemap="sitemap", legal="legal",
              news_t="News from the web", news_d="The latest headlines from major news sites, updated several times a day.",
              latest="Latest articles", cats="Categories", read="min read", pub="Published on", toc="Contents",
              also="More in", all="All articles", page="page", soon="The first articles are coming very soon.",
              sitemap_t="Sitemap", legal_t="Legal notice", all_news="All news", more_news="More news",
              cat_t="all our articles", nf="Page not found", nf_d="This page does not exist or has moved.", back="Back to home",
-             ago_min="{} min ago", ago_h="{}h ago", ago_d="{}d ago", ext="External link to"),
+             ago_min="{} min ago", ago_h="{}h ago", ago_d="{}d ago", ext="External link to",
+             submit="submit-an-article", submit_t="Submit an article", by="By", author_site="Author's website"),
 }
 MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]
 MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
@@ -53,7 +55,7 @@ def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
 # ---------- Markdown minimal ----------
-def inline(t):
+def inline(t, rel="noopener"):
     t = esc(t)
     t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
     t = re.sub(r"(?<![*\w])\*(?!\*)(.+?)\*", r"<em>\1</em>", t)
@@ -61,15 +63,16 @@ def inline(t):
         txt, href = m.group(1), html.unescape(m.group(2))
         ext = href.startswith("http") and not href.startswith(BASE)
         if href.startswith("/"): href = url(href.lstrip("/"))
-        return f'<a href="{esc(href)}"' + (' rel="noopener" target="_blank"' if ext else "") + f">{txt}</a>"
+        return f'<a href="{esc(href)}"' + (f' rel="{rel}" target="_blank"' if ext else "") + f">{txt}</a>"
     return re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, t)
 
-def md_to_html(md):
+def md_to_html(md, rel="noopener"):
+    il = lambda x: inline(x, rel)
     out, toc, para, lst, tag = [], [], [], [], None
     def flush():
         nonlocal para, lst
-        if para: out.append("<p>" + inline(" ".join(para)) + "</p>"); para = []
-        if lst: out.append(f"<{tag}>" + "".join(f"<li>{inline(i)}</li>" for i in lst) + f"</{tag}>"); lst = []
+        if para: out.append("<p>" + il(" ".join(para)) + "</p>"); para = []
+        if lst: out.append(f"<{tag}>" + "".join(f"<li>{il(i)}</li>" for i in lst) + f"</{tag}>"); lst = []
     for line in md.splitlines():
         s = line.strip()
         if not s: flush(); continue
@@ -77,13 +80,13 @@ def md_to_html(md):
         if m:
             flush(); lvl, txt = len(m.group(1)), m.group(2); hid = slugify(txt)
             if lvl == 2: toc.append((hid, txt))
-            out.append(f'<h{lvl} id="{hid}">{inline(txt)}</h{lvl}>'); continue
+            out.append(f'<h{lvl} id="{hid}">{il(txt)}</h{lvl}>'); continue
         m = re.match(r"^[-*]\s+(.*)", s) or re.match(r"^\d+[.)]\s+(.*)", s)
         if m:
             t2 = "ol" if s[0].isdigit() else "ul"
             if para or (lst and t2 != tag): flush()
             tag = t2; lst.append(m.group(1)); continue
-        if s.startswith(">"): flush(); out.append("<blockquote>" + inline(s.lstrip("> ")) + "</blockquote>"); continue
+        if s.startswith(">"): flush(); out.append("<blockquote>" + il(s.lstrip("> ")) + "</blockquote>"); continue
         if lst: flush()
         para.append(s)
     flush()
@@ -111,6 +114,18 @@ def load_articles():
                          words=len(re.findall(r"\w+", m.group(2))),
                          tags=[t.strip() for t in meta.get("tags", "").split(",") if t.strip()],
                          path=lp(lang, f.stem + "/")))
+    # Articles proposés par les visiteurs et validés
+    sp = ROOT / "data" / "submissions.json"
+    for s in (json.loads(sp.read_text(encoding="utf-8")) if sp.exists() else []):
+        if s.get("category") not in CATS or s.get("lang") not in LANGS: continue
+        slug = slugify(s["title"])[:70].strip("-") + f"-{s['id']}"
+        body, toc = md_to_html(s["content"], CFG.get("submission_link_rel", "noopener"))
+        date = dt.datetime.fromisoformat(s["approved_at"].replace("Z", "+00:00"))
+        plain = re.sub(r"\s+", " ", re.sub(r"[#*>\[\]]|\(https?://[^)]*\)", "", s["content"])).strip()
+        arts.append(dict(title=s["title"], description=(s.get("description") or plain[:155].rsplit(" ", 1)[0] + "..."),
+                         category=s["category"], lang=s["lang"], slug=slug, body=body, toc=toc, date=date, updated=date,
+                         words=len(re.findall(r"\w+", s["content"])), tags=[], path=lp(s["lang"], slug + "/"),
+                         author=s.get("name"), author_url=s.get("target_url"), anchor=s.get("anchor")))
     arts.sort(key=lambda a: a["date"], reverse=True)
     return arts
 
@@ -131,7 +146,7 @@ CSS = """:root{--ink:#17191e;--mut:#5f6570;--line:#e7e4dd;--bg:#fbfaf7;--card:#f
 *{box-sizing:border-box;margin:0;padding:0}body{font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
 a{color:inherit;text-decoration:none}.w{max-width:1100px;margin:0 auto;padding:0 18px}
 header{border-bottom:1px solid var(--line)}.top{display:flex;align-items:center;justify-content:space-between;height:62px;gap:10px}
-.logo{font:800 24px Georgia,serif;letter-spacing:-.5px}.logo b{color:var(--acc)}
+.logo{font:800 24px Georgia,serif;letter-spacing:-.5px;white-space:nowrap}.logo b{color:var(--acc)}
 .tl{display:flex;gap:6px;align-items:center;font-size:14px}.tl a{padding:6px 10px;border-radius:8px;color:var(--mut)}.tl a:hover,.tl a.on{background:var(--soft);color:var(--ink)}
 nav.cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 12px;scrollbar-width:none}nav.cats::-webkit-scrollbar{display:none}
 nav.cats a{white-space:nowrap;padding:5px 13px;border:1px solid var(--line);border-radius:99px;font-size:14px;color:var(--mut);background:var(--card)}
@@ -158,6 +173,7 @@ article{max-width:740px;margin:0 auto 20px}article h1{font-size:clamp(28px,4.5vw
 .tags{margin:24px 0;display:flex;flex-wrap:wrap;gap:6px}.tags span{background:var(--soft);border-radius:6px;padding:2px 10px;font-size:13px;color:var(--mut)}
 .pag{display:flex;gap:8px;justify-content:center;margin:30px 0}.pag a,.pag span{padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card)}.pag span{background:var(--ink);color:#fff}
 footer{border-top:1px solid var(--line);margin-top:50px;padding:26px 0;color:var(--mut);font-size:14px}footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}footer a:hover{color:var(--ink)}
+@media(max-width:560px){.tl .sub span{display:none}}
 @media(max-width:820px){.grid{grid-template-columns:1fr}.catgrid{grid-template-columns:repeat(2,1fr)}.news li{flex-direction:column;gap:2px}}"""
 
 def page(lang, title, desc, path, content, active=None, extra="", og="website", noindex=False, alt=None):
@@ -192,12 +208,12 @@ def page(lang, title, desc, path, content, active=None, extra="", og="website", 
 </head>
 <body>
 <header><div class="w"><div class="top"><a class="logo" href="{url(lp(lang))}">{g("logo_html", lang)}</a>
-<div class="tl"><a href="{url(path) if lang == 'fr' else switch}" class="{'on' if lang == 'fr' else ''}" hreflang="fr">FR</a><a href="{url(path) if lang == 'en' else switch}" class="{'on' if lang == 'en' else ''}" hreflang="en">EN</a></div></div>
+<div class="tl"><a href="{url(lp(lang, t['submit'] + '/'))}" class="sub {'on' if active == 'submit' else ''}" title="{t['submit_t']}">✍️ <span>{t['submit_t']}</span></a><a href="{url(path) if lang == 'fr' else switch}" class="{'on' if lang == 'fr' else ''}" hreflang="fr">FR</a><a href="{url(path) if lang == 'en' else switch}" class="{'on' if lang == 'en' else ''}" hreflang="en">EN</a></div></div>
 <nav class="cats">{nav}</nav></div></header>
 <main class="w">
 {content}
 </main>
-<footer><div class="w"><div>© {NOW.year} {esc(site)}</div><div><a href="{url(lp(lang, t['sitemap'] + '/'))}">{t['sitemap_t']}</a> · <a href="{url(lp(lang, t['legal'] + '/'))}">{t['legal_t']}</a> · <a href="{abs_url(lp(lang, 'rss.xml'))}">RSS</a></div></div></footer>
+<footer><div class="w"><div>© {NOW.year} {esc(site)}</div><div><a href="{url(lp(lang, t['submit'] + '/'))}">{t['submit_t']}</a> · <a href="{url(lp(lang, t['sitemap'] + '/'))}">{t['sitemap_t']}</a> · <a href="{url(lp(lang, t['legal'] + '/'))}">{t['legal_t']}</a> · <a href="{abs_url(lp(lang, 'rss.xml'))}">RSS</a></div></div></footer>
 </body>
 </html>"""
 
@@ -212,6 +228,14 @@ def news_list(items, lang):
         f'<li><a href="{esc(n["url"])}" target="_blank" rel="nofollow noopener" title="{t["ext"]} {esc(n["source"])}">{esc(n["title"])}</a>'
         f'<small>{esc(n["source"])} · {ago(n["dt"], lang)}</small></li>' for n in items) + "</ul>"
 
+def author_box(a, lang):
+    if not a.get("author"): return ""
+    link = ""
+    if a.get("author_url"):
+        rel = CFG.get("submission_link_rel", "noopener")
+        link = f' · <a href="{esc(a["author_url"])}" target="_blank" rel="{rel}">{esc(a.get("anchor") or T[lang]["author_site"])}</a>'
+    return f'<p class="meta" style="margin-top:26px;padding:14px;background:var(--soft);border-radius:10px">✍️ {T[lang]["by"]} <strong>{esc(a["author"])}</strong>{link}</p>'
+
 ld = lambda o: '<script type="application/ld+json">' + json.dumps(o, ensure_ascii=False) + "</script>"
 
 def write(path, content):
@@ -224,6 +248,89 @@ def pager(cur, total, base):
     link = lambda n: url(base + ("" if n == 1 else f"page/{n}/"))
     return '<nav class="pag">' + "".join(f"<span>{n}</span>" if n == cur else f'<a href="{link(n)}">{n}</a>'
         for n in range(1, total + 1) if n in (1, total) or abs(n - cur) <= 2) + "</nav>"
+
+# ---------- Proposer un article ----------
+SUBMIT_TXT = {
+  "fr": dict(lead="Publiez gratuitement votre article sur Le Mag Utile. Chaque proposition est relue avant publication.",
+    rules=["Article original, jamais publié ailleurs, en français", "600 mots minimum, utile et bien structuré", "Sous-titres avec ## et listes avec - (format markdown)",
+           "Un lien vers votre site autorisé", "Refusés : contenu copié, adulte, jeux d'argent, arnaques, armes, contenu haineux"],
+    name="Votre nom (affiché sous l'article)", email="Votre email (jamais affiché)", cat="Catégorie", choose="Choisir...", title="Titre de l'article",
+    desc="Résumé en une phrase (facultatif)", content="Votre article", ph="Écrivez votre article ici.\n\n## Un sous-titre\n\nUn paragraphe...\n\n- une liste\n- de points",
+    url="Votre site (facultatif)", anchor="Texte du lien vers votre site (facultatif)", words="mots", min="minimum 600 recommandé",
+    send="Envoyer pour relecture", ok="✅ Merci ! Votre article a bien été reçu. Il sera publié après relecture.",
+    err="Envoi impossible. Vérifiez que l'article fait au moins 1 500 caractères et que le lien commence par https://", free="100 % gratuit"),
+  "en": dict(lead="Publish your article on The Useful Mag for free. Every submission is reviewed before publishing.",
+    rules=["Original article, never published elsewhere, in English", "At least 600 words, useful and well structured", "Subheadings with ## and lists with - (markdown format)",
+           "One link to your website allowed", "Rejected: copied, adult, gambling, scam, weapons or hateful content"],
+    name="Your name (shown under the article)", email="Your email (never shown)", cat="Category", choose="Choose...", title="Article title",
+    desc="One-sentence summary (optional)", content="Your article", ph="Write your article here.\n\n## A subheading\n\nA paragraph...\n\n- a list\n- of points",
+    url="Your website (optional)", anchor="Link text to your website (optional)", words="words", min="600 minimum recommended",
+    send="Send for review", ok="✅ Thank you! Your article was received. It will be published after review.",
+    err="Could not send. Make sure the article has at least 1,500 characters and the link starts with https://", free="100% free"),
+}
+
+def submit_html(lang):
+    s, t = SUBMIT_TXT[lang], T[lang]
+    opts = "".join(f'<option value="{k}">{c["emoji"]} {esc(cname(c, lang))}</option>' for k, c in CATS.items())
+    return f"""<p class="crumbs"><a href="{url(lp(lang))}">{t['home']}</a> › {t['submit_t']}</p>
+<article><h1>✍️ {t['submit_t']}</h1><p class="lead">{s['lead']} <strong>{s['free']}</strong>.</p>
+<div class="toc"><ul style="padding-left:18px">{"".join(f"<li>{r}</li>" for r in s['rules'])}</ul></div>
+<form id="f" class="sf">
+<label>{s['name']}<input name="name" required maxlength="100"></label>
+<label>{s['email']}<input name="email" type="email" required maxlength="200"></label>
+<label>{s['cat']}<select name="category" required><option value="">{s['choose']}</option>{opts}</select></label>
+<label>{s['title']}<input name="title" required minlength="10" maxlength="200"></label>
+<label>{s['desc']}<input name="description" maxlength="300"></label>
+<label>{s['content']}<textarea name="content" required minlength="1500" maxlength="30000" rows="18" placeholder="{esc(s['ph'])}"></textarea></label>
+<p class="meta"><span id="wc">0</span> {s['words']} · {s['min']}</p>
+<label>{s['url']}<input name="target_url" type="url" placeholder="https://" maxlength="300"></label>
+<label>{s['anchor']}<input name="anchor" maxlength="100"></label>
+<input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<button id="sb" type="submit">{s['send']}</button>
+<div id="out"></div>
+</form></article>
+<style>.sf label{{display:block;font-weight:600;font-size:15px;margin:14px 0 0}}.sf input,.sf select,.sf textarea{{display:block;width:100%;margin-top:6px;padding:11px;border:1px solid var(--line);border-radius:10px;font:inherit;font-weight:400;background:#fff}}
+.sf button{{margin-top:20px;background:var(--acc);color:#fff;border:0;border-radius:10px;padding:13px 22px;font:600 16px sans-serif;cursor:pointer}}.sf button:disabled{{opacity:.5}}
+.msg{{margin-top:14px;padding:13px;border-radius:10px}}.ok{{background:#e6f5ea;color:#1d6b35}}.ko{{background:#fde8e4;color:#a3341a}}</style>
+<script>
+const f=document.getElementById('f'),sb=document.getElementById('sb'),out=document.getElementById('out');
+f.content.addEventListener('input',()=>document.getElementById('wc').textContent=f.content.value.trim().split(/\\s+/).filter(Boolean).length);
+f.addEventListener('submit',async e=>{{e.preventDefault();if(f.website.value)return;
+const d=Object.fromEntries(new FormData(f));delete d.website;d.lang='{lang}';d.email=d.email.trim().toLowerCase();
+for(const k of ['description','target_url','anchor'])d[k]=(d[k]||'').trim()||null;
+sb.disabled=true;
+try{{const r=await fetch('{CFG["supabase_url"]}/rest/v1/lp_submissions',{{method:'POST',headers:{{apikey:'{CFG["supabase_key"]}',Authorization:'Bearer {CFG["supabase_key"]}','Content-Type':'application/json',Prefer:'return=minimal'}},body:JSON.stringify(d)}});
+if(!r.ok)throw 0;f.reset();out.innerHTML='<div class="msg ok">{s["ok"]}</div>';}}
+catch(_){{out.innerHTML='<div class="msg ko">{esc(s["err"])}</div>';}}sb.disabled=false;}});
+</script>"""
+
+ADMIN_HTML = """<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Validation des articles</title>
+<style>body{font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#fbfaf7;color:#17191e}.w{max-width:820px;margin:0 auto;padding:16px}
+h1{font-size:22px}.tabs{display:flex;gap:6px;margin:12px 0}.tabs button{border:1px solid #ddd;background:#fff;border-radius:99px;padding:6px 14px;cursor:pointer}.tabs .on{background:#17191e;color:#fff}
+.it{background:#fff;border:1px solid #e7e4dd;border-radius:12px;padding:14px;margin-bottom:12px}.it h2{font-size:18px;margin:0 0 4px}.m{color:#5f6570;font-size:14px}
+pre{white-space:pre-wrap;font:15px/1.6 inherit;background:#f2eee6;padding:12px;border-radius:8px;max-height:420px;overflow:auto}
+.b{display:flex;gap:8px;margin-top:10px}.b button{flex:1;border:0;border-radius:8px;padding:11px;font-weight:600;cursor:pointer;color:#fff}.ok{background:#1d8a45}.no{background:#c0392b}.re{background:#888}</style></head>
+<body><div class="w"><h1>✍️ Articles proposés</h1><div class="tabs"><button data-s="pending" class="on">En attente</button><button data-s="approved">Publiés</button><button data-s="rejected">Refusés</button></div><div id="l">Chargement...</div></div>
+<script>
+const SB='__SB_URL__',K='__SB_KEY__',CATS=__CATS__;
+let key=location.hash.slice(1);try{if(key)localStorage.setItem('mag_admin',key);else key=localStorage.getItem('mag_admin')||'';}catch(e){}
+history.replaceState(null,'',location.pathname);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const rpc=(fn,b)=>fetch(SB+'/rest/v1/rpc/'+fn,{method:'POST',headers:{apikey:K,Authorization:'Bearer '+K,'Content-Type':'application/json'},body:JSON.stringify(b)}).then(r=>{if(!r.ok)throw r;return r.text()}).then(t=>t?JSON.parse(t):null);
+let st='pending';
+async function load(){const l=document.getElementById('l');l.textContent='Chargement...';
+try{const rows=await rpc('lp_admin_list',{p_key:key,p_status:st});
+l.innerHTML=rows.length?rows.map(r=>`<div class="it"><h2>${r.lang=='en'?'🇬🇧':'🇫🇷'} ${esc(r.title)}</h2>
+<div class="m">${esc(CATS[r.category]||r.category)} · ${esc(r.name)} (${esc(r.email)}) · ${r.content.trim().split(/\\s+/).length} mots · ${new Date(r.created_at).toLocaleString('fr-FR')}</div>
+${r.target_url?`<div class="m">Lien : <a href="${esc(r.target_url)}" target="_blank" rel="noopener">${esc(r.anchor||r.target_url)}</a> (${esc(r.target_url)})</div>`:''}
+${r.description?`<p><em>${esc(r.description)}</em></p>`:''}<details><summary>Lire l'article</summary><pre>${esc(r.content)}</pre></details>
+<div class="b">${st!='approved'?`<button class="ok" onclick="setS(${r.id},'approved')">✅ Valider</button>`:''}${st!='rejected'?`<button class="no" onclick="setS(${r.id},'rejected')">❌ Refuser</button>`:''}${st!='pending'?`<button class="re" onclick="setS(${r.id},'pending')">↩️ En attente</button>`:''}</div></div>`).join(''):'<p class="m">Rien ici.</p>';}
+catch(e){l.innerHTML='<p>Accès refusé. Ouvre le lien admin complet (avec la clé après le #).</p>';}}
+async function setS(id,s){await rpc('lp_admin_set',{p_key:key,p_id:id,p_status:s});load();}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');st=b.dataset.s;load();});
+load();
+</script></body></html>"""
 
 # ---------- Build ----------
 def build():
@@ -254,7 +361,7 @@ def build():
             cat_path = lp(lang, t["cat"] + "/" + a["category"] + "/")
             schema = ld({"@context": "https://schema.org", "@graph": [
                 {"@type": "Article", "headline": a["title"], "description": a["description"], "datePublished": a["date"].isoformat(),
-                 "dateModified": a["updated"].isoformat(), "author": org, "publisher": org, "mainEntityOfPage": abs_url(a["path"]),
+                 "dateModified": a["updated"].isoformat(), "author": ({"@type": "Person", "name": a["author"]} if a.get("author") else org), "publisher": org, "mainEntityOfPage": abs_url(a["path"]),
                  "articleSection": cname(c, lang), "keywords": ", ".join(a["tags"]), "wordCount": a["words"], "inLanguage": lang},
                 {"@type": "BreadcrumbList", "itemListElement": [
                     {"@type": "ListItem", "position": 1, "name": t["home"], "item": abs_url(lp(lang))},
@@ -264,8 +371,8 @@ def build():
             cat_news = [n for n in news if n.get("category") == a["category"]][:5]
             body = f"""<p class="crumbs"><a href="{url(lp(lang))}">{t['home']}</a> › <a href="{url(cat_path)}">{esc(cname(c, lang))}</a></p>
 <article><span class="tag">{c['emoji']} {esc(cname(c, lang))}</span><h1>{esc(a['title'])}</h1><p class="lead">{esc(a['description'])}</p>
-<p class="meta">{t['pub']} <time datetime="{a['date'].date()}">{fdate(a['date'], lang)}</time> · {rtime(a['words'])} {t['read']}</p>
-{toc}<div class="body">{a['body']}</div>
+<p class="meta">{(t['by'] + ' ' + esc(a['author']) + ' · ') if a.get('author') else ''}{t['pub']} <time datetime="{a['date'].date()}">{fdate(a['date'], lang)}</time> · {rtime(a['words'])} {t['read']}</p>
+{toc}<div class="body">{a['body']}{author_box(a, lang)}</div>
 {('<div class="tags">' + "".join(f"<span>{esc(x)}</span>" for x in a["tags"]) + "</div>") if a["tags"] else ""}</article>
 {(f'<h2 class="sec">{t["also"]} {esc(cname(c, lang))}</h2><div class="grid">' + "".join(card(x) for x in rel) + "</div>") if rel else ""}
 {(f'<h2 class="sec">{t["news_t"]}</h2>' + news_list(cat_news, lang)) if cat_news else ""}"""
@@ -350,6 +457,16 @@ def build():
         items = "".join(f"""<item><title>{esc(a['title'])}</title><link>{abs_url(a['path'])}</link><guid>{abs_url(a['path'])}</guid><pubDate>{format_datetime(a['date'])}</pubDate><category>{esc(cname(CATS[a['category']], lang))}</category><description>{esc(a['description'])}</description></item>\n""" for a in arts[:50])
         write(lp(lang, "rss.xml"), f"""<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>{esc(site)}</title><link>{abs_url(lp(lang))}</link><description>{esc(g('description', lang))}</description><language>{lang}</language>\n{items}</channel></rss>\n""")
 
+        # Proposer un article
+        sub = lp(lang, t["submit"] + "/")
+        write(sub, page(lang, t["submit_t"], SUBMIT_TXT[lang]["lead"], sub, submit_html(lang), "submit",
+                        alt=both(lambda l: lp(l, T[l]["submit"] + "/"))))
+        sitemap.append((abs_url(sub), NOW, both(lambda l: lp(l, T[l]["submit"] + "/"))))
+
+    # Admin (validation des articles proposés)
+    write("admin/index.html", ADMIN_HTML.replace("__SB_URL__", CFG["supabase_url"]).replace("__SB_KEY__", CFG["supabase_key"])
+          .replace("__CATS__", json.dumps({s: c["name"] for s, c in CATS.items()}, ensure_ascii=False)))
+
     # 404
     write("404.html", page("fr", T["fr"]["nf"], T["fr"]["nf_d"], "404.html",
         f'<section class="hero"><h1>{T["fr"]["nf"]}</h1><p>{T["fr"]["nf_d"]} <a href="{url()}" style="text-decoration:underline">{T["fr"]["back"]}</a></p></section>', noindex=True))
@@ -360,7 +477,7 @@ def build():
         links = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{esc(abs_url(p))}"/>' for l, p in alt.items()) if len(alt) > 1 else ""
         sx += f"<url><loc>{esc(u)}</loc><lastmod>{d.date()}</lastmod>{links}</url>\n"
     write("sitemap.xml", sx + "</urlset>\n")
-    write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {abs_url('sitemap.xml')}\n")
+    write("robots.txt", f"User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: {abs_url('sitemap.xml')}\n")
     print(f"OK : {sum(a['lang']=='fr' for a in all_arts)} articles FR, {sum(a['lang']=='en' for a in all_arts)} articles EN, {len(all_news)} actus, {len(sitemap)} URLs dans le sitemap")
 
 if __name__ == "__main__":

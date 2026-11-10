@@ -21,6 +21,8 @@ jobs:
           python-version: "3.12"
       - name: Récupérer les flux RSS
         run: python3 fetch_feeds.py
+      - name: Récupérer les articles validés des visiteurs
+        run: python3 fetch_submissions.py
       - name: Générer le site
         run: python3 build.py
       - name: Publier
