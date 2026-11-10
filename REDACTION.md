@@ -1,6 +1,6 @@
 # Consignes de rédaction (tâche quotidienne)
 
-Chaque jour : 15 à 20 articles en français et 15 à 20 articles en anglais.
+Chaque jour : 15 à 20 articles en français et 15 à 20 articles en anglais, sur des sujets précis et détaillés.
 
 Chaque article = un fichier `content/<slug>.md`. Le slug = le nom du fichier, en minuscules, sans accents, mots séparés par des tirets, reprenant la requête visée (ex. `comment-detartrer-une-bouilloire`).
 
@@ -24,16 +24,23 @@ Introduction de 2 à 3 phrases qui répond directement à la question.
 ## En résumé
 ```
 
-## Règles SEO
+## Règles SEO et qualité
 
-- Une requête précise par article, réellement tapée par les gens (« comment… », « combien… », « pourquoi… », « meilleur… », « que faire si… »). Jamais deux articles sur la même requête : vérifier les slugs existants avant d'écrire.
-- Environ 600 mots (550 à 700). Répondre à la question dès l'introduction, puis détailler.
-- 4 à 8 sections `##`, sous-sections `###` si utile, listes à puces et étapes numérotées, **gras** sur les points clés, une section « En résumé » à la fin.
-- 2 à 4 liens internes vers des articles existants du site, en markdown : `[texte](/slug-de-l-article/)` (pour l'anglais : `/en/slug/`).
-- Contenu exact et utile : pas de chiffres inventés, pas de fausses citations. En santé, argent et droit, rester général et conseiller un professionnel quand c'est pertinent. Ne rien copier d'autres sites.
+### Des sujets pointus, pas généralistes
+- Une question précise par article, comme une vraie recherche Google de longue traîne. Exemples : pas « comment économiser de l'argent » mais « comment résilier son assurance emprunteur avec la loi Lemoine » ; pas « bien dormir » mais « se réveiller à 3 h du matin chaque nuit : causes et solutions » ; pas « choisir un smartphone » mais « iPhone qui chauffe en charge : que faire ».
+- Jamais deux articles sur la même requête : vérifier les slugs existants avant d'écrire.
 - Varier les catégories chaque jour pour couvrir les 15 catégories.
-- Anglais : écrire nativement pour un public international (pas une traduction mot à mot), avec des requêtes anglaises propres.
-- Jamais de tiret cadratin (—) : utiliser des tirets courts, deux-points ou virgules.
+
+### Des articles détaillés
+- 900 à 1 300 mots. Répondre à la question dès l'introduction, puis aller dans le détail.
+- Du concret partout : étapes numérotées précises (menus, réglages, démarches), exemples chiffrés, cas particuliers, erreurs fréquentes, ce qui change selon la situation, prix ou délais réels.
+- Quand c'est utile : un tableau comparatif (en liste si besoin), une section FAQ « Questions fréquentes » avec 3 à 5 questions, un encadré conseil en citation (>).
+- Vérifier par une recherche web les faits qui changent (prix, lois, montants d'aides, dates, versions de logiciels) et ne garder que ce qui est confirmé par une source fiable (site officiel, service-public.fr, éditeur...). Jamais de chiffre inventé.
+- En santé, argent et droit : rester exact et nuancé, et conseiller un professionnel quand c'est pertinent.
+- 4 à 8 sections `##`, sous-sections `###`, listes, **gras** sur les points clés, section « En résumé » (« Summary » en anglais) à la fin.
+- 2 à 4 liens internes vers des articles existants du site : `[texte](/slug-de-l-article/)` (anglais : `/en/slug/`). Un lien externe vers une source officielle est bienvenu.
+- Anglais : écrire nativement pour un public international, avec des requêtes anglaises propres (pas une traduction mot à mot).
+- Ne rien copier d'autres sites. Jamais de tiret cadratin (—) : tirets courts, deux-points ou virgules.
 
 ## Étaler la publication
 
