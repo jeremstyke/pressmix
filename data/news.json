@@ -57,6 +57,33 @@
 "category": "argent"
 },
 {
+"title": "Présidentielle 2027 : quand le sport veut s'inviter dans l'élection",
+"url": "https://www.france24.com/fr/sports/20261110-sport-2027-presidentielle-castera-%C3%A9lection",
+"date": "2026-11-10T17:53:47+00:00",
+"source": "France 24",
+"lang": "fr",
+"category": null,
+"follow": false
+},
+{
+"title": "Bouygues Telecom en panne ? Les signalements grimpent ce soir",
+"url": "https://www.frandroid.com/marques/bouygues-telecom/3318253_bouygues-telecom-en-panne-les-signalements-grimpent-ce-soir",
+"date": "2026-11-10T17:53:34+00:00",
+"source": "Frandroid",
+"lang": "fr",
+"category": "tech",
+"follow": false
+},
+{
+"title": "DMZ key and locations in Modern Warfare 4",
+"url": "https://www.polygon.com/mw4-modern-warfare-4-dmz-keys-locations-all-list/",
+"date": "2026-11-10T17:52:52+00:00",
+"source": "Polygon",
+"lang": "en",
+"category": "jeux-video",
+"follow": false
+},
+{
 "title": "Accor : Parvus veut accélérer la succession de Sébastien Bazin",
 "url": "https://www.lefigaro.fr/societes/accor-parvus-veut-accelerer-la-succession-de-sebastien-bazin-20261110",
 "date": "2026-11-10T17:51:08+01:00",
@@ -209,6 +236,15 @@
 "source": "Frandroid",
 "lang": "fr",
 "category": "tech"
+},
+{
+"title": "Analysis: Hegseth fights for his political life with appeal to Trump",
+"url": "https://www.bbc.co.uk/news/articles/cwm232mnv11do?at_medium=RSS&at_campaign=rss",
+"date": "2026-11-10T17:24:01+00:00",
+"source": "BBC News",
+"lang": "en",
+"category": null,
+"follow": false
 },
 {
 "title": "Sky pledges backing for Equal Sport Project",
@@ -803,6 +839,15 @@
 "category": null
 },
 {
+"title": "CNews : les organisations lycéennes et la CGT font front contre la chaîne ; Catherine Pégard, la ministre de la culture, appelle à ne pas « trier les journalistes »",
+"url": "https://www.lemonde.fr/actualite-medias/article/2026/11/10/cnews-les-organisations-lyceennes-et-la-cgt-font-front-contre-la-chaine-catherine-pegard-la-ministre-de-la-culture-appelle-a-ne-pas-trier-les-journalistes_6808855_3236.html",
+"date": "2026-11-10T16:06:42+01:00",
+"source": "Le Monde",
+"lang": "fr",
+"category": null,
+"follow": false
+},
+{
 "title": "Le jeu vidéo est-il une aberration écologique ? Un rapport de 204 pages vient de tout dévoiler en pleine COP31",
 "url": "https://www.jeuxvideo.com/news/2113417/le-jeu-video-est-il-une-aberration-ecologique-un-rapport-de-204-pages-vient-de-tout-devoiler-en-pleine-cop31.htm",
 "date": "2026-11-10T16:06:34+01:00",
@@ -929,6 +974,15 @@
 "source": "Sky Sports",
 "lang": "en",
 "category": "sport"
+},
+{
+"title": "McTominay had heart 'shocked' two days before Scotland's World Cup opener",
+"url": "https://www.skysports.com/football/news/12040/13610728/scott-mctominay-scotland-midfielder-had-heart-shocked-two-days-before-world-cup-opener-against-haiti",
+"date": "2026-11-10T16:00:00+00:00",
+"source": "Sky Sports",
+"lang": "en",
+"category": "sport",
+"follow": false
 },
 {
 "title": "Retraites : 40% des Français ignorent le principe du système par répartition",
@@ -1609,6 +1663,15 @@
 "source": "BBC Sport",
 "lang": "en",
 "category": "sport"
+},
+{
+"title": "ChatGPT is getting verified AI ‘Business Agents’",
+"url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+"date": "2026-11-10T13:00:00-05:00",
+"source": "The Verge",
+"lang": "en",
+"category": "tech",
+"follow": false
 },
 {
 "title": "Un portefeuille Ethereum de 2015 transfère 4,6 millions de dollars et évite une arnaque",
