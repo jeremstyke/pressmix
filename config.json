@@ -7,7 +7,7 @@
   "tagline_en": "Clear answers to your everyday questions",
   "description": "PressMix publie chaque jour des guides et conseils pratiques : argent, tech, santé, maison, voyage, cuisine, sport et bien plus, ainsi que les actus du web.",
   "description_en": "PressMix publishes practical guides and tips every day: money, tech, health, home, travel, food, sports and more, plus the latest news from the web.",
-  "base_url": "https://jeremstyke.github.io/pressmix",
+  "base_url": "https://pressmix-production.up.railway.app",
   "custom_domain": "",
   "google_verification": "",
   "publisher": "Jérémy Dacier-Jury",
