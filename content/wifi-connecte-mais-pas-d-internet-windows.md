@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi connecté mais pas d'internet sur Windows : 9 solutions qui marchent
 seo_title: Wi-Fi connecté mais pas d'internet sur Windows : solutions
-description: PC Windows « Connecté, pas d'internet » ? Box, DNS, adresse IP, pilote, réinitialisation : 9 solutions à tester dans l'ordre, de la plus simple à la plus poussée.
+description: « Connecté, pas d'internet » sur Windows ? Box, DNS, adresse IP, pilote, réinitialisation : 9 solutions à tester dans l'ordre, de la plus simple à la plus avancée.
 category: tech
 lang: fr
 date: 2026-11-11T09:00:00+01:00
