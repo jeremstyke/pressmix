@@ -4,6 +4,7 @@ seo_title: Pourquoi mon chien mange de l'herbe ? Causes et risques
 description: Votre chien mange de l'herbe, parfois avant de vomir ? Causes fréquentes, vrais dangers (pesticides, épillets, plantes toxiques) et quand consulter.
 category: animaux
 lang: fr
+translation: why-does-my-dog-eat-grass
 date: 2026-11-11T18:30:00+01:00
 tags: chien, manger de l'herbe, vomissement, comportement canin, vétérinaire
 ---

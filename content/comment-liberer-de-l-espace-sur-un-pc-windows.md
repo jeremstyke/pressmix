@@ -4,6 +4,7 @@ seo_title: Comment libérer de l'espace sur un PC Windows : 8 astuces
 description: Disque C plein, PC qui rame ? Voici 8 méthodes simples pour libérer de l'espace sur un PC Windows sans rien casser, du nettoyage de disque au tri des fichiers.
 category: tech
 lang: fr
+translation: how-to-free-up-disk-space-on-windows-11
 date: 2026-11-10T08:15:00+01:00
 tags: Windows, stockage, disque dur, nettoyage, PC
 ---

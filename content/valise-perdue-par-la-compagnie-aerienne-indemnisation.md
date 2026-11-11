@@ -4,6 +4,7 @@ seo_title: Valise perdue par la compagnie aérienne : indemnisation
 description: Bagage perdu, retardé ou abîmé ? Rapport PIR, délais de 7 et 21 jours, plafond de la convention de Montréal, frais remboursés : le guide pour être indemnisé.
 category: voyage
 lang: fr
+translation: lost-luggage-compensation-how-to-claim
 date: 2026-11-11T13:20:00+01:00
 tags: bagage perdu, valise retardée, convention de Montréal, indemnisation, aéroport
 ---

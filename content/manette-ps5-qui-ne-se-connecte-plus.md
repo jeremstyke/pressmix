@@ -4,6 +4,7 @@ seo_title: Manette PS5 qui ne se connecte plus : 8 solutions efficaces
 description: Votre DualSense clignote sans se connecter ? Câble, réinitialisation par le petit trou, appairage, mise à jour : 8 solutions pas à pas pour la manette PS5.
 category: jeux-video
 lang: fr
+translation: ps5-controller-not-connecting
 date: 2026-11-11T15:00:00+01:00
 tags: PS5, DualSense, manette, PlayStation, connexion
 ---

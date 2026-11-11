@@ -4,6 +4,7 @@ seo_title: Se réveiller à 3 h du matin chaque nuit : causes, solutions
 description: Réveillé à 3 h du matin sans pouvoir vous rendormir ? Cycles du sommeil, stress, alcool, apnée : les causes et une méthode concrète pour des nuits complètes.
 category: sante
 lang: fr
+translation: why-do-i-wake-up-at-3am-every-night
 date: 2026-11-11T23:00:00+01:00
 tags: réveil nocturne, insomnie, sommeil, stress, cortisol
 ---

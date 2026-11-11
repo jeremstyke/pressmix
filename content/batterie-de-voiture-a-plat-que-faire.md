@@ -4,6 +4,7 @@ seo_title: Batterie de voiture à plat : que faire ? Les solutions
 description: Votre voiture ne démarre plus ? Voici que faire quand la batterie de voiture est à plat : câbles, booster, recharge, et comment éviter que ça recommence.
 category: auto
 lang: fr
+translation: car-battery-dead-how-to-start-your-car
 date: 2026-11-10T15:45:00+01:00
 tags: batterie, voiture, démarrage, câbles de démarrage, booster
 ---

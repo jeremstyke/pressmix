@@ -4,6 +4,7 @@ seo_title: Enlever le calcaire sur une paroi de douche en verre
 description: Paroi de douche blanchie par le calcaire ? Vinaigre chaud, acide citrique, bicarbonate : la méthode pas à pas pour un verre net, puis les gestes qui durent.
 category: maison
 lang: fr
+translation: how-to-remove-hard-water-stains-from-shower-glass
 date: 2026-11-11T11:40:00+01:00
 tags: calcaire, paroi de douche, vinaigre blanc, acide citrique, nettoyage salle de bain
 ---

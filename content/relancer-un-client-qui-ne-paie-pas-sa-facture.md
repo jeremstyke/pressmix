@@ -4,6 +4,7 @@ seo_title: Facture impayée : relancer un client qui ne paie pas
 description: Un client ne règle pas votre facture ? Calendrier de relance, modèles de messages, pénalités et indemnité de 40 €, mise en demeure puis injonction de payer.
 category: business
 lang: fr
+translation: how-to-chase-an-unpaid-invoice
 date: 2026-11-11T20:10:00+01:00
 tags: facture impayée, relance client, freelance, mise en demeure, injonction de payer
 ---

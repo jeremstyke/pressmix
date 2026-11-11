@@ -4,6 +4,7 @@ seo_title: Voyant moteur orange allumé : que faire et peut-on rouler ?
 description: Voyant moteur orange allumé ? Fixe ou clignotant, causes fréquentes, vérifications à faire soi-même, lecture du code défaut et risques à continuer de rouler.
 category: auto
 lang: fr
+translation: check-engine-light-on-what-to-do
 date: 2026-11-11T17:40:00+01:00
 tags: voyant moteur, tableau de bord, diagnostic OBD, panne voiture, garage
 ---

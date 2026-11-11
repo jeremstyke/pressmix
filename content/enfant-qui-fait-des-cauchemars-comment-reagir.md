@@ -4,6 +4,7 @@ seo_title: Enfant qui fait des cauchemars : comment réagir et l'aider
 description: Votre enfant se réveille en pleurs après un cauchemar ? Les bons gestes la nuit, la différence avec les terreurs nocturnes et les astuces pour des nuits calmes.
 category: famille
 lang: fr
+translation: child-having-nightmares-what-to-do
 date: 2026-11-11T16:45:00+01:00
 tags: cauchemars, enfant, sommeil, terreurs nocturnes, parentalité
 ---

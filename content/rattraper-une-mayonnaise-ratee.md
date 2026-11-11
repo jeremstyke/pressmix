@@ -4,6 +4,7 @@ seo_title: Mayonnaise ratée : comment la rattraper en 2 minutes
 description: Votre mayonnaise est liquide ou a tranché ? Les 3 méthodes pour la rattraper, les causes de l'échec et la recette inratable avec les bonnes proportions.
 category: cuisine
 lang: fr
+translation: how-to-fix-split-mayonnaise
 date: 2026-11-11T12:30:00+01:00
 tags: mayonnaise, sauce, émulsion, jaune d'oeuf, astuce cuisine
 ---

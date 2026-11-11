@@ -4,6 +4,7 @@ seo_title: Point de côté en courant : causes et comment le faire passer
 description: Point de côté pendant votre footing ? Le geste pour le calmer en une minute, les vraies causes, quoi manger avant de courir et 6 astuces pour l'éviter.
 category: sport
 lang: fr
+translation: side-stitch-when-running
 date: 2026-11-11T14:10:00+01:00
 tags: point de côté, course à pied, respiration, running, débutant
 ---
